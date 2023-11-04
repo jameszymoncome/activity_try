@@ -1,0 +1,202 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+
+  span{
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: orange;
+    color: black;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  .sub-menu{
+    display: none;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+   /* Position and style the close button (top right corner) */
+   .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: -23px;
+    font-size: 36px;
+  }
+
+  h5{
+    color: black;
+    background-color: orange;
+    padding: 7px 7px 7px 7px;
+  }
+  
+  .subtopic-box {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin: 10px 0; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(221, 139, 31, 0.877); 
+    height: 500px;
+}
+
+.centered-text {
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 18px; 
+    color: #333; 
+}
+
+/* Style the additional text (not centered) */
+.subtopic-box p:not(.centered-text) {
+    text-align: left;
+    font-size: 14px; 
+    color: #666; 
+    margin: 0; 
+}
+/* Style the "Next" button */
+#nextButton {
+    background-color: #3498db;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+/* Change button color on hover */
+#nextButton:hover {
+    background-color: #297db3;
+}
+
+/* Center the button within its container */
+#nextButton-container {
+    text-align: center;
+}
+
+/* Style the second box (newContent) */
+#newContent .subtopic-box {
+  background-color: #f2f2f2; 
+  color: #333;
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 0 5px rgba(221, 139, 31, 0.877); 
+  height: 300px;
+}
+
+/* Customize the "Next" and "Back" buttons within the second box */
+#newContent #nextButton,
+#newContent #backButton {
+  background-color: #3498db; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+/* Change button color on hover */
+#newContent #nextButton:hover,
+#newContent #backButton:hover {
+  background-color: #297db3;
+}
+
+#userAnswer {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  min-width: 30px; /* Set a minimum width to maintain the underline */
+  min-height: 1em; /* Set a minimum height to maintain the underline */
+  padding: 0 5px;
+  outline: none;
+  resize: none;
+}
+
+
+
+
+
+
+  
