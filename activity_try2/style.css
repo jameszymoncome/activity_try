@@ -194,6 +194,16 @@
   resize: none;
 }
 
+.new_Content  {
+  background-color: #f2f2f2; 
+  color: #333;
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 0 5px rgba(221, 139, 31, 0.877); 
+  height: 300px;
+}
+
 
 
 
