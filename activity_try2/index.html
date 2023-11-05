@@ -21,11 +21,11 @@
             <button class="dropdown-btn">HTML Headings
               </button>
               <div class="dropdown-container">
-                <a href="#subtopic6" onclick="showContent('subtopic1')">Excercise 1</a>
-                <a href="#subtopic7" onclick="showContent('subtopic2')">Excercise 2</a>
-                <a href="#subtopic8" onclick="showContent('subtopic3')">Excercise 3</a>
-                <a href="#subtopic9" onclick="showContent('subtopic4')">Excercise 4</a>
-                <a href="#subtopic10" onclick="showContent('subtopic5')">Excercise 5</a>
+                <a href="#subtopic6" onclick="showContent('subtopic6')">Excercise 1</a>
+                <a href="#subtopic7" onclick="showContent('subtopic7')">Excercise 2</a>
+                <a href="#subtopic8" onclick="showContent('subtopic8')">Excercise 3</a>
+                <a href="#subtopic9" onclick="showContent('subtopic9')">Excercise 4</a>
+                <a href="#subtopic10" onclick="showContent('subtopic10')">Excercise 5</a>
               </div>
             <button class="dropdown-btn">HTML Paragraphs
               </button>
@@ -284,7 +284,80 @@
                 </div>
                 <button id="backButton" style="display: none;" onclick="showFirstContent()">Back</button>
             </div>
-            
+
+            <!--HTML HEADINGS-->
+            <div id="subtopic6" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">CONTENTS SA TOPIC 1</p>
+                  <p id="question6" ansValue="h1">Put the missing tag.</p> 
+              <div> < h1>My Title <input type="text" id="answer6" name="attribute_info" size="5" maxlength="2"> 
+              </ __> </div>
+                <Button id="buttonId" class="submit" onclick="showAnswer('question6', 'answer6')">ShowAnswer</Button>
+                <Button id="button_Id" class="submit" onclick="checkAnswer('question6', 'answer6')">SubmitAnswer</Button>
+              </div>
+              </div>
+              <button id="nextButton" style="display: none;" onclick="showNewContent()">Next</button>
+          </div>
+          
+          <div id="subtopic7" class="sub-content" style="display: none;">
+              <div class="new_Content">
+                  <p class="centered-text">CONTENTS SA TOPIC 2</p>
+                  <p id="question7" ansValue="<h1>Makulay</h1>">Use the correct HTML tag to add a heading with the text "Makulay".</p> 
+              <div>  <input type="text" id="answer7" name="attribute_info" size="12"  maxlength="16"> 
+                <br>
+                <br>
+                < p>Makulay ang buhay. Makulay ang buhay sa sinabawang gulay. Makulay ang buhay. Makulay ang buhay sa sinabawang gulay.4x< /p> </div>
+                <Button id="buttonId" class="submit" onclick="showAnswer('question7', 'answer7')">ShowAnswer</Button>
+                <Button id="button_Id" class="submit" onclick="checkAnswer('question7', 'answer7')">SubmitAnswer</Button>
+              </div>
+          </div>
+          <div id="subtopic8" class="sub-content" style="display: none;">
+              <div class="new_Content">
+                  <p class="centered-text">CONTENTS SA TOPIC 3</p>
+                  <p id="question8" ansValue="<h3>">Identify the missing one.</p> <br><br>
+              <div> < h1>I CAN< /h1> <br>
+                < h2>SHOW YOU< /h2> <br>
+                <input type="text" id="answer8" name="attribute_info" size="1px" maxlength="4"> 
+                THE WORLD< /h3> <br>
+	              < h4>SHINING SHIMMERING< /h4> <br>
+	              < h5>SPLENDID< /h5> </div>
+                <Button id="buttonId" class="submit" onclick="showAnswer('question8', 'answer8')">ShowAnswer</Button>
+                <Button id="button_Id" class="submit" onclick="checkAnswer('question8', 'answer8')">SubmitAnswer</Button>
+              </div>
+          </div>
+          <div id="subtopic9" class="sub-content" style="display: none;">
+              <div class="new_Content">
+                  <p class="centered-text">CONTENTS SA TOPIC 4</p>
+                  <p id="question9" ansValue="h1">What is the biggest heading?</p> 
+              <div> <br> <br> <input type="text" id="answer9" name="attribute_info" size="1px" maxlength="2"> 
+                </div>
+                <Button id="buttonId" class="submit" onclick="showAnswer('question9', 'answer9')">ShowAnswer</Button>
+                <Button id="button_Id" class="submit" onclick="checkAnswer('question9', 'answer9')">SubmitAnswer</Button>
+              </div>
+          </div>
+          <div id="subtopic10" class="sub-content" style="display: none;">
+              <div class="new_Content">
+                  <p class="centered-text">CONTENTS SA TOPIC 5</p>
+                  <p id="question10" ansValue="h6">Defines the least improtant heading.</p> 
+              <div> <br> <br> <input type="text" id="answer10" name="attribute_info" size="1px" maxlength="2"> 
+                </div>
+                <Button id="buttonId" class="submit" onclick="showAnswer('question10', 'answer10')">ShowAnswer</Button>
+                <Button id="button_Id" class="submit" onclick="checkAnswer('question10', 'answer10')">SubmitAnswer</Button>
+              </div>
+          </div>
+          
+
+          <div id="newContent" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                <p class="centered-text">Exercise Activity</p>
+                <p id="question1" ansValue="alt">Identify the alternate text for the image.</p> 
+              <div> < img src="facebook.png" <input type="text" id="answer1" name="attribute_info" size="5" maxlength="3"> 
+                ="Facebook Logo"> </div>
+                <Button id="buttonId" class="submit" onclick="showAnswer('question1', 'answer1')">ShowAnswer</Button>
+                <Button id="button_Id" class="submit" onclick="checkAnswer('question1', 'answer1')">SubmitAnswer</Button>
+              </div>
+              <button id="backButton" style="display: none;" onclick="showFirstContent()">Back</button>
+          </div>
 
         </div>
           </div>
