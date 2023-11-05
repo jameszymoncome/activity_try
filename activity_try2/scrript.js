@@ -115,6 +115,55 @@ function checkUserAnswer() {
   }
 }
 
+var isHidden = true;
+function showAnswer(answerId, inputId){
+  var button = document.getElementById("buttonId");
+  var button_1 = document.getElementById("button_Id");
+  var answer_id = document.getElementById(answerId);
+  var answer = answer_id.getAttribute("ansValue");
+  var userAsnwer = document.getElementById(inputId).value;
+
+  if (isHidden === true){
+    var inputElement = document.querySelector('input[name="attribute_info"]');
+    
+   // Set the value of the input element to the correct answer
+   inputElement.value = answer;
+   button.textContent = 'Hide Answer';
+   button_1.setAttribute('disabled', 'true');
+   
+   // Disable the input to prevent further editing
+   inputElement.setAttribute('disabled', 'true');
+   isHidden = false;
+   } else {
+    var inputElement = document.querySelector('input[name="attribute_info"]');
+   
+   // Set the value of the input element to the correct answer
+   inputElement.value = '';
+   button.textContent = 'Show Answer';
+   button_1.removeAttribute('disabled');
+   
+   // Disable the input to prevent further editing
+   inputElement.removeAttribute('disabled');
+   isHidden = true;
+   }
+}
+
+function checkAnswer(questionId, inputId){
+  // Get specific question by ID
+  var thisQuestionId = document.getElementById(questionId);
+  // Get answer value of the specific question
+  var ans = thisQuestionId.getAttribute("ansValue");
+  // Get user input value
+  var userAsnwer = document.getElementById(inputId).value;
+  // Checks if user input is same with set correct answer
+  if (ans === userAsnwer){
+      alert( userAsnwer + " is correct!");
+  } else if (userAsnwer.length <= 0){
+      alert("You have to fill the blank!");
+  } else {
+      alert( userAsnwer + " is wrong!");
+  }
+  }
 
 
 

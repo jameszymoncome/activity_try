@@ -221,7 +221,12 @@
             <div id="subtopic1" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                     <p class="centered-text">CONTENTS SA TOPIC 1</p>
-                    <p>dito tutorials</p>
+                    <p id="question1" ansValue="alt">Identify the alternate text for the image.</p> 
+                <div> < img src="facebook.png" <input type="text" id="answer1" name="attribute_info" size="5" maxlength="3"> 
+                  ="Facebook Logo"> </div>
+                  <Button id="buttonId" class="submit" onclick="showAnswer('question1', 'answer1')">ShowAnswer</Button>
+                  <Button id="button_Id" class="submit" onclick="checkAnswer('question1', 'answer1')">SubmitAnswer</Button>
+                </div>
                 </div>
                 <button id="nextButton" style="display: none;" onclick="showNewContent()">Next</button>
             </div>
@@ -229,25 +234,41 @@
             <div id="subtopic2" class="sub-content" style="display: none;">
                 <div class="new_Content">
                     <p class="centered-text">CONTENTS SA TOPIC 2</p>
-                    <p>dito tutorials</p>
+                    <p id="question2" ansValue="title">Add a "tooltip" to the paragraph below with the text "My Story".</p> 
+                <div> < p <input type="text" id="answer2" name="attribute_info" size="5" maxlength="5"> 
+                  ="My Story">This is my story.< /p> </div>
+                  <Button id="buttonId" class="submit" onclick="showAnswer('question2', 'answer2')">ShowAnswer</Button>
+                  <Button id="button_Id" class="submit" onclick="checkAnswer('question2', 'answer2')">SubmitAnswer</Button>
                 </div>
             </div>
             <div id="subtopic3" class="sub-content" style="display: none;">
                 <div class="new_Content">
                     <p class="centered-text">CONTENTS SA TOPIC 3</p>
-                    <p>dito tutorials</p>
+                    <p id="question3" ansValue="href=">Make the element below into a link that goes to "https://www.youtube.com/".</p> 
+                <div> < a <input type="text" id="answer3" name="attribute_info" size="5" maxlength="5"> 
+                  "https://www.youtube.com/">This is a link< /a> </div>
+                  <Button id="buttonId" class="submit" onclick="showAnswer('question3', 'answer3')">ShowAnswer</Button>
+                  <Button id="button_Id" class="submit" onclick="checkAnswer('question3', 'answer3')">SubmitAnswer</Button>
                 </div>
             </div>
             <div id="subtopic4" class="sub-content" style="display: none;">
                 <div class="new_Content">
                     <p class="centered-text">CONTENTS SA TOPIC 4</p>
-                    <p>dito tutorials</p>
+                    <p id="question4" ansValue="src=">Identify the attribute that specifies the path to the image to be displayed.</p> 
+                <div> < img <input type="text" id="answer4" name="attribute_info" size="5" maxlength="4"> 
+                  "img_girl.jpg"> </div>
+                  <Button id="buttonId" class="submit" onclick="showAnswer('question4', 'answer4')">ShowAnswer</Button>
+                  <Button id="button_Id" class="submit" onclick="checkAnswer('question4', 'answer4')">SubmitAnswer</Button>
                 </div>
             </div>
             <div id="subtopic5" class="sub-content" style="display: none;">
                 <div class="new_Content">
                     <p class="centered-text">CONTENTS SA TOPIC 5</p>
-                    <p>dito tutorials</p>
+                    <p id="question5" ansValue="style">Identify the attribute that is used to add styles to an element, such as color, font, size, and more.</p> 
+                <div> < p <input type="text" id="answer5" name="attribute_info" size="5" maxlength="5"> 
+                  ="color:red;">This is a red paragraph.< /p> </div>
+                  <Button id="buttonId" class="submit" onclick="showAnswer('question5', 'answer5')">ShowAnswer</Button>
+                  <Button id="button_Id" class="submit" onclick="checkAnswer('question5', 'answer5')">SubmitAnswer</Button>
                 </div>
             </div>
             
@@ -255,8 +276,11 @@
             <div id="newContent" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                   <p class="centered-text">Exercise Activity</p>
-                  <p>Complete the sentence: "The capital of France is <span id="userAnswer" contenteditable="true"></span>."</p>
-                  <button id="submitButton" onclick="checkUserAnswer()">Submit</button>  
+                  <p id="question1" ansValue="alt">Identify the alternate text for the image.</p> 
+                <div> < img src="facebook.png" <input type="text" id="answer1" name="attribute_info" size="5" maxlength="3"> 
+                  ="Facebook Logo"> </div>
+                  <Button id="buttonId" class="submit" onclick="showAnswer('question1', 'answer1')">ShowAnswer</Button>
+                  <Button id="button_Id" class="submit" onclick="checkAnswer('question1', 'answer1')">SubmitAnswer</Button>
                 </div>
                 <button id="backButton" style="display: none;" onclick="showFirstContent()">Back</button>
             </div>
