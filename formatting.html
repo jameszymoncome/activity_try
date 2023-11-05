@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Exercise: Add a Tooltip</title>
+  <style>
+    .exercise {
+      font-weight: bold;
+    }
+    .code-input {
+      font-family: 'Courier New', monospace;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    /* Styling for the buttons */
+    .submit-button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .show-answer-button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .exercise-buttons {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .exercise-button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    body {
+      background-color: rgb(145, 233, 218);
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Exercise for Formatting</h1>
+
+  <div id="exercise1">
+    <p><span class="exercise">Exercise 1:</span> What tag do you need to put at the start of the paragraph to italicize it?</p>
+    <pre>&lt;p> <input type="text" id="q1input" class="code-input" placeholder="">"You are so beautiful."&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(1)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(1)">Show Answer</button>
+    <p id="feedback1" class="feedback"></p>
+  </div>
+
+  <div id="exercise2">
+    <p><span class="exercise">Exercise 2:</span> Create more extra importance for the word "family" in the paragraph below.</p>
+    <pre>&lt;p>One of the biggest parts of our society is a good <input type="text" id="q2input1" class="code-input" placeholder="start tag"> family <input type="text" id="q2input2" class="code-input" placeholder="end tag"> that gives us good communication and well-being.&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(2)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(2)">Show Answer</button>
+    <p id="feedback2" class="feedback"></p>
+  </div>
+
+  <div id="exercise3">
+    <p><span class="exercise">Exercise 3:</span> Apply tags to the paragraph below to format the text as a paragraph.</p>
+    <pre>&lt;p><input type="text" id="q3input1" class="code-input" placeholder="start tag"> HTML formatting is one of the useful parts of HTML coding <input type="text" id="q3input2" class="code-input" placeholder="end tag">&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(3)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(3)">Show Answer</button>
+    <p id="feedback3" class="feedback"></p>
+  </div>
+  
+  <div id="exercise4">
+    <p><span class="exercise">Exercise 4:</span> Highlight the " Premier" in the CNSC Vision..</p>
+    <p>CNSC as a <input type="text" id="q4input1" class="code-input" placeholder="start tag">Premier<input type="text" id="q4input2" class="code-input" placeholder="end tag"> Higher Education Institution in the Bicol Region.</p>
+    <button class="submit-button" onclick="submitAnswer(4)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(4)">Show Answer</button>
+    <p id="feedback4" class="feedback"></p>
+  </div>
+  <div id="exercise5">
+    <p><span class="exercise">Exercise 5:</span>Place the "lle" above other text.</p>
+    <p>Robert a présenté son rapport à M<input type="text" id="q5input1" class="code-input" placeholder="start tag">lle<input type="text" id="q5input2" class="code-input" placeholder="end tag"> Bernard.</p>
+    <button class="submit-button" onclick="submitAnswer(5)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(5)">Show Answer</button>
+    <p id="feedback5" class="feedback"></p>
+  </div>
+
+  <script>
+    var correctAnswer1 = "<i>";
+    var correctAnswer2 = "<strong>";
+    var correctAnswer3 = "</strong>";
+    var correctAnswer4 = "<text>";
+    var correctAnswer5 = "</text>";
+    var correctAnswer6 = "<mark>";
+    var correctAnswer7 ="</mark>";
+    var correctAnswer8 = "<sup>";
+    var correctAnswer9 = "</sup>";
+    var answerVisible1 = false;
+    var answerVisible2 = false;
+    var answerVisible3 = false;
+    var answerVisible4 = false;
+    var answerVisible5 = false;
+
+    function submitAnswer(exerciseNumber) {
+      if (exerciseNumber === 1) {
+        var q1input = document.getElementById("q1input").value;
+        var feedbackElement = document.getElementById("feedback1");
+        var codeInput1 = document.getElementById("q1input");
+
+        if (q1input.toLowerCase() === correctAnswer1) {
+          feedbackElement.innerHTML = "Correct! The tag to italicize text is <i>.";
+        } else {
+          feedbackElement.innerHTML = "Incorrect. Please try again.";
+          codeInput1.value = "";
+        }
+      } else if (exerciseNumber === 2) {
+        var q2input1 = document.getElementById("q2input1").value;
+        var q2input2 = document.getElementById("q2input2").value;
+        var feedbackElement = document.getElementById("feedback2");
+        var codeInput2 = document.getElementById("q2input2");
+
+        if (q2input1.toLowerCase() === correctAnswer2 && q2input2.toLowerCase() === correctAnswer3) {
+          feedbackElement.innerHTML = "Correct! The <strong> tag adds extra importance to the word 'family'.";
+        } else {
+          feedbackElement.innerHTML = "Incorrect. Please try again.";
+          codeInput1.value = "";
+          codeInput2.value = "";
+        }
+      } else if (exerciseNumber === 3) {
+        var q3input1 = document.getElementById("q3input1").value;
+        var q3input2 = document.getElementById("q3input2").value;
+        var feedbackElement = document.getElementById("feedback3");
+        var codeInput1 = document.getElementById("q3input1");
+        var codeInput2 = document.getElementById("q3input2");
+
+        if (q3input1.toLowerCase() === correctAnswer4 && q3input2.toLowerCase() === correctAnswer5) {
+          feedbackElement.innerHTML = "Correct! The <p> tag is used to format text as a paragraph.";
+        } else {
+          feedbackElement.innerHTML = "Incorrect. Please try again.";
+          codeInput1.value = "";
+          codeInput2.value = "";
+        }
+      }
+      if (exerciseNumber === 4) {
+    var q4input1 = document.getElementById("q4input1").value;
+    var q4input2 = document.getElementById("q4input2").value;
+    var feedbackElement = document.getElementById("feedback4");
+
+    if (q4input1.toLowerCase() === "<mark>" && q4input2.toLowerCase() === "</mark>") {
+      feedbackElement.innerHTML = "Correct! The answer is <mark></mark>.";
+    } else {
+      feedbackElement.innerHTML = "Incorrect. Please try again.";
+    }
+   }
+   if (exerciseNumber === 5) {
+    var q5input1 = document.getElementById("q5input1").value;
+    var q5input2 = document.getElementById("q5input2").value;
+    var feedbackElement = document.getElementById("feedback5");
+
+    if (q5input1.toLowerCase() === "<sup>" && q5input2.toLowerCase() === "</sup>") {
+      feedbackElement.innerHTML = "Correct! The answer is <sup></sup>.";
+    } else {
+      feedbackElement.innerHTML = "Incorrect. Please try again.";
+    }
+  }
+ }
+
+    function toggleAnswer(exerciseNumber) {
+      if (exerciseNumber === 1) {
+        var feedbackElement = document.getElementById("feedback1");
+        var codeInput1 = document.getElementById("q1input");
+
+        if (answerVisible1) {
+          feedbackElement.innerHTML = "";
+          codeInput1.value = "";
+        } else {
+          feedbackElement.innerHTML = "The tag to italicize text is <i>.";
+          codeInput1.value = correctAnswer1;
+        }
+
+        answerVisible1 = !answerVisible1;
+      } else if (exerciseNumber === 2) {
+        var feedbackElement = document.getElementById("feedback2");
+        var codeInput1 = document.getElementById("q2input1");
+        var codeInput2 = document.getElementById("q2input2");
+
+        if (answerVisible2) {
+          feedbackElement.innerHTML = "";
+          codeInput1.value = "";
+          codeInput2.value = "";
+        } else {
+          feedbackElement.innerHTML = "The <strong> tag adds extra importance to the word 'family'.";
+          codeInput1.value = correctAnswer2;
+          codeInput2.value = correctAnswer3;
+        }
+
+        answerVisible2 = !answerVisible2;
+      } else if (exerciseNumber === 3) {
+        var feedbackElement = document.getElementById("feedback3");
+        var codeInput1 = document.getElementById("q3input1");
+        var codeInput2 = document.getElementById("q3input2");
+
+        if (answerVisible3) {
+          feedbackElement.innerHTML = "";
+          codeInput1.value = "";
+          codeInput2.value = "";
+        } else {
+          feedbackElement.innerHTML = "The tag is used to format text as a paragraph.";
+          codeInput1.value = correctAnswer4;
+          codeInput2.value = correctAnswer5;
+        }
+
+        answerVisible3 = !answerVisible3;
+      }else if (exerciseNumber === 4) {
+        var feedbackElement = document.getElementById("feedback4");
+        var codeInput1 = document.getElementById("q4input1");
+        var codeInput2 = document.getElementById("q4input2");
+
+        if (answerVisible3) {
+          feedbackElement.innerHTML = "";
+          codeInput1.value = "";
+          codeInput2.value = "";
+        } else {
+          feedbackElement.innerHTML = "The mark tag is used to format the text highlighted.";
+          codeInput1.value = correctAnswer6;
+          codeInput2.value = correctAnswer7;
+        }
+
+        answerVisible3 = !answerVisible4;
+      }else if (exerciseNumber === 5) {
+        var feedbackElement = document.getElementById("feedback5");
+        var codeInput1 = document.getElementById("q5input1");
+        var codeInput2 = document.getElementById("q5input2");
+
+        if (answerVisible3) {
+          feedbackElement.innerHTML = "";
+          codeInput1.value = "";
+          codeInput2.value = "";
+        } else {
+          feedbackElement.innerHTML = "The uses of superior lettering is the presentation of certain abbreviations in French";
+          codeInput1.value = correctAnswer8;
+          codeInput2.value = correctAnswer9;
+        }
+
+        answerVisible3 = !answerVisible5;
+      }
+      
+    }
+  </script>
+</body>
+</html>

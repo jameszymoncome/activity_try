@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Exercise:</title>
+  <style>
+    .exercise {
+      font-weight: bold;
+    }
+    .code-input {
+      font-family: 'Courier New', monospace;
+      padding: 5px;
+      border: 1px solid #ccc;
+      resize: horizontal;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    /* Styling for the buttons */
+    .submit-button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .show-answer-button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .exercise-buttons {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .exercise-button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    body {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Exercise for Input Attributes</h1>
+
+  <div id="exercise1">
+    <p><span class="exercise">Exercise 1:</span>The missing attribute to specify a placeholder text of "Enter your username" for the input field is:</p>
+    <pre>&lt;p> label for="username">Username:label
+    input type="text" id="username"<input type="text" id="q1input" class="code-input" placeholder="">&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(1)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(1)">Show Answer</button>
+    <p id="feedback1" class="feedback"></p>
+  </div>
+
+  <div id="exercise2">
+    <p><span class="exercise">Exercise 2:</span>The missing attribute to set a maximum character limit of 50 for the input field is:</p>
+    <pre>&lt;p> label for="bio">Bio: /label
+      input type="text" id="bio"<input type="text" id="q2input" class="code-input" placeholder="">&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(2)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(2)">Show Answer</button>
+    <p id="feedback2" class="feedback"></p>
+  </div>
+
+  <div id="exercise3">
+    <p><span class="exercise">Exercise 3:</span> The missing attribute to make the input field required is:
+    </p>
+    <pre>&lt;p> label for="email">Email: /label
+      input type="email" id="email"<input type="text" id="q3input" class="code-input" placeholder="">&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(3)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(3)">Show Answer</button>
+    <p id="feedback3" class="feedback"></p>
+  </div>
+  
+  <div id="exercise4">
+    <p><span class="exercise">Exercise 4:</span> The missing attribute to specify a default value of "Lovely Joyce" for the input field is:</p>
+    <pre>&lt;p>label for="name">Name:/label
+      input type="text" id="name"<input type="text" id="q4input" class="code-input" placeholder="">&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(4)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(4)">Show Answer</button>
+    <p id="feedback4" class="feedback"></p>
+  </div>
+  <div id="exercise5">
+    <p><span class="exercise">Exercise 5:</span>The missing attribute to disable the input field is:</p>
+    <pre>&lt;p>label for="phone">Phone:/label
+      input type="text" id="phone"<input type="text" id="q5input" class="code-input" placeholder="">&lt;/p></pre>
+    <button class="submit-button" onclick="submitAnswer(5)">Submit</button>
+    <button class="show-answer-button" onclick="toggleAnswer(5)">Show Answer</button>
+    <p id="feedback5" class="feedback"></p>
+  </div>
+
+  <script>
+    var correctAnswer1 = "placeholder= Enter your username";
+    var correctAnswer2 = "maxlength=50";
+    var correctAnswer3 = "required";
+    var correctAnswer4 = "value=Lovely Joyce";
+    var correctAnswer5 = "disabled";
+    var answerVisible1 = false;
+    var answerVisible2 = false;
+    var answerVisible3 = false;
+    var answerVisible4 = false;
+    var answerVisible5 = false;
+
+    function submitAnswer(exerciseNumber) {
+      if (exerciseNumber === 1) {
+  var q1input = document.getElementById("q1input").value;
+  var feedbackElement = document.getElementById("feedback1");
+  var codeInput1 = document.getElementById("q1input");
+
+  if (q1input.toLowerCase() === correctAnswer1.toLowerCase()) {
+    feedbackElement.innerHTML = "Correct!";
+  } else {
+    feedbackElement.innerHTML = "Incorrect. Please try again.";
+    codeInput1.value = "";
+  }
+
+      } else if (exerciseNumber === 2) {
+        var q2input = document.getElementById("q2input").value;
+        var feedbackElement = document.getElementById("feedback2");
+        var codeInput2 = document.getElementById("q2input");
+
+        if (q2input.toLowerCase() === correctAnswer2) {
+          feedbackElement.innerHTML = "Correct! ";
+        } else {
+          feedbackElement.innerHTML = "Incorrect. Please try again.";
+          codeInput2.value = "";
+        }
+      } else if (exerciseNumber === 3) {
+        var q3input = document.getElementById("q3input").value;
+  
+        var feedbackElement = document.getElementById("feedback3");
+        var codeInput3 = document.getElementById("q3input");
+       
+        if (q3input.toLowerCase() ===  correctAnswer3) {
+          feedbackElement.innerHTML = "Correct! ";
+        } else {
+          feedbackElement.innerHTML = "Incorrect. Please try again.";
+          codeInput3.value = "";
+          
+        }
+      }
+      if (exerciseNumber === 4) {
+  var q4input = document.getElementById("q4input").value;
+  var feedbackElement = document.getElementById("feedback4");
+ 
+  if (q4input.toLowerCase() === correctAnswer4.toLowerCase()) {
+    feedbackElement.innerHTML = "Correct!";
+  } else {
+    feedbackElement.innerHTML = "Incorrect. Please try again.";
+  }
+}
+   if (exerciseNumber === 5) {
+    var q5input = document.getElementById("q5input").value;
+    var feedbackElement = document.getElementById("feedback5");
+
+    if (q5input.toLowerCase() === correctAnswer5) {
+      feedbackElement.innerHTML = "Correct!";
+    } else {
+      feedbackElement.innerHTML = "Incorrect. Please try again.";
+    }
+  }
+ }
+
+    function toggleAnswer(exerciseNumber) {
+      if (exerciseNumber === 1) {
+        var feedbackElement = document.getElementById("feedback1");
+        var codeInput1 = document.getElementById("q1input");
+
+        if (answerVisible1) {
+          feedbackElement.innerHTML = "";
+          codeInput1.value = "";
+        } else {
+          feedbackElement.innerHTML = " ";
+          codeInput1.value = correctAnswer1;
+        }
+
+        answerVisible1 = !answerVisible1;
+      } else if (exerciseNumber === 2) {
+        var feedbackElement = document.getElementById("feedback2");
+        var codeInput2 = document.getElementById("q2input");
+       
+
+        if (answerVisible2) {
+          feedbackElement.innerHTML = "";
+          codeInput2.value = "";
+        } else {
+          feedbackElement.innerHTML = " ";
+          codeInput2.value = correctAnswer2;
+         
+        }
+
+        answerVisible2 = !answerVisible2;
+      } else if (exerciseNumber === 3) {
+        var feedbackElement = document.getElementById("feedback3");
+        var codeInput3 = document.getElementById("q3input");
+        
+        if (answerVisible3) {
+          feedbackElement.innerHTML = "";
+          codeInput3.value = "";
+          
+        } else {
+          feedbackElement.innerHTML = " ";
+          codeInput3.value = correctAnswer3;
+        
+        }
+
+        answerVisible3 = !answerVisible3;
+      }else if (exerciseNumber === 4) {
+        var feedbackElement = document.getElementById("feedback4");
+        var codeInput4 = document.getElementById("q4input");
+        if (answerVisible4) {
+          feedbackElement.innerHTML = "";
+          codeInput4.value = "";
+        } else {
+          feedbackElement.innerHTML = " ";
+          codeInput4.value = correctAnswer4;
+        }
+
+        answerVisible4 = !answerVisible4;
+      }else if (exerciseNumber === 5) {
+        var feedbackElement = document.getElementById("feedback5");
+        var codeInput5 = document.getElementById("q5input");
+       
+
+        if (answerVisible3) {
+          feedbackElement.innerHTML = "";
+          codeInput5.value = "";
+          
+        } else {
+          feedbackElement.innerHTML = " ";
+          codeInput5.value = correctAnswer5;
+       
+        }
+
+        answerVisible5 = !answerVisible5;
+      }
+      
+    }
+  </script>
+</body>
+</html>
