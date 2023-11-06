@@ -111,6 +111,7 @@ if (isHidden === true){
  }
 }
 
+const exercisesId_array= [];
 function checkAnswer(questionId, inputId){
 // Get specific question by ID
 var thisQuestionId = document.getElementById(questionId);
@@ -121,6 +122,9 @@ var userAsnwer = document.getElementById(inputId).value;
 // Checks if user input is same with set correct answer
 if (ans === userAsnwer){
     alert( userAsnwer + " is correct!");
+    if (!(exercisesId_array.includes(questionId))){
+      progress(questionId);
+    }
 } else if (userAsnwer.length <= 0){
     alert("You have to fill the blank!");
 } else {
@@ -128,4 +132,11 @@ if (ans === userAsnwer){
 }
 }
 
+var completed_exercises = 0;
+function progress(exercisesId){
+  progressBar = document.getElementById("progressId");
+  completed_exercises++;
+  progressBar.textContent = "Finished exercises: " + completed_exercises.toString() + "/110";
+  exercisesId_array.push(exercisesId);
+}
 
