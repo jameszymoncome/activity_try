@@ -38,6 +38,10 @@
     transition: margin-left .5s;
     padding: 20px;
   }
+ #archivido {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -130,7 +134,7 @@
 /* Style the additional text (not centered) */
 .subtopic-box p:not(.centered-text) {
     text-align: left;
-    font-size: 14px; 
+    font-size: 17px; 
     color: #666; 
     margin: 0; 
 }
@@ -203,6 +207,24 @@
   box-shadow: 0 0 5px rgba(221, 139, 31, 0.877); 
   height: 300px;
 }
+
+.submit {
+  display:block;
+  background-color: rgb(251, 184, 59);
+  color: black;
+  font-size: 14px;
+  height:30px;
+  width: 15%;
+  border: none;
+  border-radius: 25px;
+  margin-top:20px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color:orange;
+}
+
 
 
 
