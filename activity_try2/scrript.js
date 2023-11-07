@@ -79,36 +79,35 @@ function showOriginalContent(currentContentId, newContentId, nextButtonId) {
 }
 
 var isHidden = true;
-function showAnswer(answerId, inputId){
-var button = document.getElementById("buttonId");
-var button_1 = document.getElementById("button_Id");
-var answer_id = document.getElementById(answerId);
-var answer = answer_id.getAttribute("ansValue");
-var userAsnwer = document.getElementById(inputId).value;
+function showAnswer(answerId, inputId, buttonId1, buttonId2){
+  var button = document.getElementById(buttonId1);
+  var button_1 = document.getElementById(buttonId2);
+  var answer_id = document.getElementById(answerId);
+  var answer = answer_id.getAttribute("ansValue");
 
-if (isHidden === true){
-  var inputElement = document.querySelector('input[name="attribute_info"]');
-  
- // Set the value of the input element to the correct answer
- inputElement.value = answer;
- button.textContent = 'Hide Answer';
- button_1.setAttribute('disabled', 'true');
- 
- // Disable the input to prevent further editing
- inputElement.setAttribute('disabled', 'true');
- isHidden = false;
- } else {
-  var inputElement = document.querySelector('input[name="attribute_info"]');
- 
- // Set the value of the input element to the correct answer
- inputElement.value = '';
- button.textContent = 'Show Answer';
- button_1.removeAttribute('disabled');
- 
- // Disable the input to prevent further editing
- inputElement.removeAttribute('disabled');
- isHidden = true;
- }
+  if (isHidden === true){
+    var inputElement = document.getElementById(inputId);
+    
+   // Set the value of the input element to the correct answer
+   inputElement.value = answer;
+   button.textContent = 'Hide Answer';
+   button_1.setAttribute('disabled', 'true');
+   
+   // Disable the input to prevent further editing
+   inputElement.setAttribute('disabled', 'true');
+   isHidden = false;
+   } else {
+    var inputElement = document.getElementById(inputId);
+   
+   // Set the value of the input element to the correct answer
+   inputElement.value = '';
+   button.textContent = 'Show Answer';
+   button_1.removeAttribute('disabled');
+   
+   // Disable the input to prevent further editing
+   inputElement.removeAttribute('disabled');
+   isHidden = true;
+   }
 }
 
 const exercisesId_array= [];
