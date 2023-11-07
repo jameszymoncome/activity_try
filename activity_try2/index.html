@@ -1099,34 +1099,60 @@
             <!--PARAGRAPHS EXERCISES-->
             <div id="subtopic12" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
+                    <p class="centered-text"><b>Exercise 2</b></p>
+                    <p id="question12" ansValue="</p>">Fill in the blank</p> <br><br>
                     <pre>2. What tag is used in closing a paragraph?</pre>
+                    <div><input type="text" id="answer12" name="attribute_info" size="1px" maxlength="4"> </div>
+                    <Button id="attribute_show_btn12" class="submit" onclick="showAnswer('question12', 'answer12', 'attribute_show_btn12', 'attribute_sub_btn12')">Show Answer</Button>
+                    <Button id="attribute_sub_btn12" class="submit" onclick="checkAnswer('question12', 'answer12')">Submit Answer</Button>
                 </div>
             </div>
+
+
             <div id="subtopic13" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                     <p class="centered-text">Excercise 3</p>
-                    <p>3. Fill in the blank to create a paragraph.</p>
-		    <p>&lt;body&gt; This is a sample paragraph in HTML. &lt;/body&gt;</p>
+                    <p id="question13" ansValue="<p>" ansValue="</p>">Fill in the blank</p> <br><br>
+                    <p>3. Create a paragraph.</p>
+		    <pre>&lt;body&gt; <div><input type="text" id="answer13" name="attribute_info" size="1px" maxlength="5"> </div>
+This is a sample paragraph in HTML. 
+&lt;/p&gt;
+&lt;/body&gt;</pre>
+        <Button id="attribute_show_btn13" class="submit" onclick="showAnswer('question13', 'answer13', 'attribute_show_btn13', 'attribute_sub_btn13')">Show Answer</Button>
+        <Button id="attribute_sub_btn13" class="submit" onclick="checkAnswer('question13', 'answer13')">Submit Answer</Button>
                 </div>
             </div>
+
+
             <div id="subtopic14" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                     <p class="centered-text">Exercise 4</p>
-                    <p>4. Fill in the blank to create a header.</p>
-		    <p>&lt;body&gt; This is a sample paragraph in HTML. &lt;/body&gt;</p>
+                    <p id="question14" ansValue="<h2>" ansValue="</p>">Fill in the blank</p> <br><br>
+                    <p>4. Create a header.</p>
+		    <pre>&lt;body&gt;<div><input type="text" id="answer14" name="attribute_info" size="1px" maxlength="5"> </div>
+This is a sample paragraph in HTML.
+&lt;/h2&gt;
+&lt;/body&gt;</pre>
+        <Button id="attribute_show_btn14" class="submit" onclick="showAnswer('question14', 'answer14', 'attribute_show_btn14', 'attribute_sub_btn14')">Show Answer</Button>
+        <Button id="attribute_sub_btn14" class="submit" onclick="checkAnswer('question14', 'answer14')">Submit Answer</Button>
                 </div>
             </div>
+
+
             <div id="subtopic15" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                     <p class="centered-text">Exercise 5</p>
                     <pre>5. Wrap the text around HTML tags that will preserve all spaces and linebreaks when the element is displayed.
-				Dear Love,
+                <div><input type="text" id="answer15" name="attribute_info" size="1px" maxlength="5"> </div>
+Dear Love,
 
-				I hope you are ok
+I hope you are ok
 
-				I Love You
+I Love You
+                <div><input type="text" id="answer15" name="attribute_info" size="1px" maxlength="5"> </div>
 				</pre>
+                <Button id="attribute_show_btn15" class="submit" onclick="showAnswer('question15', 'answer15', 'attribute_show_btn15', 'attribute_sub_btn15')">Show Answer</Button>
+                <Button id="attribute_sub_btn15" class="submit" onclick="checkAnswer('question15', 'answer15')">Submit Answer</Button>
                 </div>
             </div>
 
