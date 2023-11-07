@@ -446,18 +446,107 @@
 
         <!--CLASSES-->
         <div id="subtopic61" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Contents sa Topic 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton13" onclick="showNewContent('subtopic61', 'newContent13')">Next</button>
-        </div>
-        <div id="newContent13" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton13" onclick="showOriginalContent('subtopic61', 'newContent13', 'nextButton13')">Back</button>
-        </div>
+  		<div class="subtopic-box">
+      		<p class="centered-text">Contents sa Topic 1</p>
+      		<p>Additional text goes here, not centered.</p>
+  	</div>
+  	<button id="nextButton13" onclick="showNewContent('subtopic61', 'newContent13')">Next</button>
+	</div>
+	<div id="newContent13" class="sub-content" style="display: none;">
+	  <div class="subtopic-box">
+	      <p id="question61" ansValue=".country {}"><span class="exercise">Exercise 1:</span>Create a class named country with no attributes</p>
+	      <pre>
+	      &lt;style> 
+	      <input type="text" id="answer61" name="attribute_info" size="11" maxlength="11">
+	      &lt;/style>
+	      </pre>
+	      <Button id="button61" class="submit" onclick="showAnswer('question61', 'answer61')">Submit</button>
+	      <Button id="button_61" class="submit" onclick="checkAnswer('question61', 'answer61')">Show Answer</button>
+	  </div>
+	  <button id="backButton13" onclick="showOriginalContent('subtopic61', 'newContent13', 'nextButton13')">Back</button>
+	</div>
+    
+	<div id="newContent13" class="sub-content" style="display: none;">
+	  <div class="subtopic-box">
+	    <p id="question62" ansValue="class name"><span class="exercise">Exercise 2:</span>The syntax for Class is a period(.) followed by:</p>
+	    <input type="text" id="answer62" name="attribute_info" size="10" maxlength="10">
+	    <Button id="button62" class="submit" onclick="showAnswer('question62', 'answer62')">Submit</button>
+	    <Button id="button_62" class="submit" onclick="checkAnswer('question62', 'answer62')">Show Answer</button>
+	    <p id="feedback2" class="feedback"></p>
+	  </div>
+	  <button id="backButton13" onclick="showOriginalContent('subtopic62', 'newContent13', 'nextButton13')">Back</button>
+	</div>
+
+	<div id="newContent13" class="sub-content" style="display: none;">
+	  <div class="subtopic-box">
+	    <p id="question63" ansValue="city"><span class="exercise">Exercise 3:</span> Fill in the missing parts with the class in the style
+	    </p>
+	    <pre>
+	      &lt;style>
+	      .city {
+	      font-family: 'Courier New', monospace;
+	      padding: 5px;
+	      border: 1px solid #ccc;
+	      resize: horizontal;}
+	      &lt;/style>
+	      &lt;/head>
+	      &lt;body>
+	      &lt;h1 class=<input type="text" id="answer63" name="attribute_info" size="4" maxlength="4">> This is h1 with class. &lt;/h1>
+	    </pre>
+	    <Button id="button63" class="submit" onclick="showAnswer('question63', 'answer63')">Submit</button>
+	    <Button id="button_63" class="submit" onclick="checkAnswer('question63', 'answer63')">Show Answer</button>
+	  </div>
+	  <button id="backButton13" onclick="showOriginalContent('subtopic63', 'newContent13', 'nextButton13')">Back</button>
+	</div>
+
+	<div id="newContent13" class="sub-content" style="display: none;">
+	  <div class="subtopic-box">
+	    <p id="question64" ansValue="City"><span>Exercise 4:</span> Use the upper case class on the second h1</p>
+	    <pre>
+	      &lt;style>
+	      .city {
+	        font-family: 'Courier New', monospace;
+	        padding: 5px;
+	        border: 1px solid #ccc;
+	        resize: horizontal;}
+	      .City {
+	        background-color: black;
+	      color: white;
+	      padding: 10px 20px;
+	      border: none;
+	      cursor: pointer;}
+	      &lt;/style>
+	      &lt;/head>
+	      &lt;body>
+	      &lt;h1 class="city"> This is the first h1.&lt;/h1>
+	      &lt;h1 class=<input type="text" id="answer64" name="attribute_info" size="4" maxlength="4">> This is the second h1.&lt;/h1></pre>
+	      <Button id="button64" class="submit" onclick="showAnswer('question64', 'answer64')">Submit</button>
+	      <Button id="button_64" class="submit" onclick="checkAnswer('question64', 'answer64')">Show Answer</button>  
+	</div>
+	  <button id="backButton13" onclick="showOriginalContent('subtopic64', 'newContent13', 'nextButton13')">Back</button>
+	</div>
+
+	<div id="newContent13" class="sub-content" style="display: none;">
+	  <div class="subtopic-box">
+	    <p id="question65" ansValue="background-color: black"><span class="exercise">Exercise 5:</span>Set the background color to black in class "city":</p>
+	    <pre>
+	      &lt;style> 
+	      .City {
+	      <input type="text" id="answer65" name="attribute_info" size="23" maxlength="23">;
+	      color: white;
+	      padding: 10px 20px;
+	      border: none;
+	      cursor: pointer;}
+	      &lt;/style>
+	      &lt;/head>
+	      &lt;/style></pre>
+	    <Button id="button65" class="submit" onclick="showAnswer('question65', 'answer65')">Submit</button>
+	    <Button id="button_65" class="submit" onclick="checkAnswer('question65', 'answer65')">Show Answer</button>  
+	</div>
+	  <button id="backButton13" onclick="showOriginalContent('subtopic65', 'newContent13', 'nextButton13')">Back</button>
+	</div>
+
+
 
         <!--ID-->
         <div id="subtopic66" class="sub-content" style="display: none;">
@@ -476,18 +565,68 @@
 
         <!--IFRAMES-->
         <div id="subtopic71" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Contents sa Topic 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton15" onclick="showNewContent('subtopic71', 'newContent15')">Next</button>
-        </div>
-        <div id="newContent15" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton15" onclick="showOriginalContent('subtopic71', 'newContent15', 'nextButton15')">Back</button>
-        </div>
+    		<div class="subtopic-box">
+        	<p class="centered-text">Contents sa Topic 1</p>
+        	<p>Additional text goes here, not centered.</p>
+    	</div>
+        <button id="nextButton15" onclick="showNewContent('subtopic71', 'newContent15')">Next</button>
+	</div>
+
+	<div id="newContent15" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question71" ansValue="src"><span class="exercise">Exercise 1:</span> Create an Iframe which goes to Sir Bryan's Facebook page.</p>
+	        <pre>&lt;iframe <input type="text" id="answer71" name="attribute_info" size="3" maxlength="3">="https:// www.facebook.com/profile.php?id=100091840688776">&lt;/iframe></pre>
+	        <Button id="button71" class="submit" onclick="showAnswer('question71', 'answer71')">Submit</button>
+	        <Button id="button_71" class="submit" onclick="checkAnswer('question71', 'answer71')">Show Answer</button>  
+	    </div>
+	        <button id="backButton15" onclick="showOriginalContent('subtopic71', 'newContent15', 'nextButton15')">Back</button>
+	</div>
+
+	<div id="newContent15" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question72" ansValue="height:100px"><span class="exercise">Exercise 2:</span> Set the height to 100px</p>
+	        <pre>&lt;iframs src="example.htm" style=<input type="text" id="answer72" name="attribute_info" size="12" maxlength="12">>&lt;/iframe></pre>
+	        <Button id="button72" class="submit" onclick="showAnswer('question72', 'answer72')">Submit</button>
+	        <Button id="button_72" class="submit" onclick="checkAnswer('question72', 'answer72')">Show Answer</button>  
+	    </div>
+	        <button id="backButton15" onclick="showOriginalContent('subtopic72', 'newContent15', 'nextButton15')">Back</button>
+	</div>
+
+	<div id="newContent15" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question73" ansValue="border:5px solid black;"><span class="exercise">Exercise 3:</span> Change the border set at 5px with a color of solid black</p>
+	        <pre>&lt;iframes src="example.htm" style=<input type="text" id="answer73" name="attribute_info" size="23" maxlength="23">> &lt;/iframe></pre>
+	        <Button id="button73" class="submit" onclick="showAnswer('question73', 'answer73')">Submit</button>
+	        <Button id="button_73" class="submit" onclick="checkAnswer('question73', 'answer73')">Show Answer</button>  
+	    </div>
+	        <button id="backButton15" onclick="showOriginalContent('subtopic73', 'newContent15', 'nextButton15')">Back</button>
+	</div>
+
+	<div id="newContent15" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question74" ansValue="iframe_2"><span class="exercise">Exercise 4:</span> Call for the 2nd iframe as a target frame.</p>
+	        <pre>&lt;iframe src="example.htm" name="iframe_1"> &lt;/iframe>
+	        &lt;iframe src="another.htm" name="iframe_2"> &lt;/iframe>
+	        &lt;p>&lt;a href="again.com" target=<input type="text" id="answer74" name="attribute_info" size="8" maxlength="8">>&lt;/a>&lt;/p></pre> 
+	
+	        <Button id="button74" class="submit" onclick="showAnswer('question74', 'answer74')">Submit</button>
+	        <Button id="button_74" class="submit" onclick="checkAnswer('question74', 'answer74')">Show Answer</button>  
+	    </div>
+	        <button id="backButton15" onclick="showOriginalContent('subtopic74', 'newContent15', 'nextButton15')">Back</button>
+	</div>
+
+	<div id="newContent15" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question75" ansValue="example_1"><span class="exercise">Exercise 5:</span>Name the Iframe as "example_1"</p>
+	        <pre>&lt;iframe src="example.htm" name=<input type="text" id="answer75" name="attribute_info" size="9" maxlength="9">>&lt;/iframe></pre>
+	        <Button id="button75" class="submit" onclick="showAnswer('question75', 'answer75')">Submit</button>
+	        <Button id="button_75" class="submit" onclick="checkAnswer('question75', 'answer75')">Show Answer</button>  
+	    </div>
+	        <button id="backButton15" onclick="showOriginalContent('subtopic75', 'newContent15', 'nextButton15')">Back</button>
+	</div>
+
+
+
         
         <!--SCRIPTS-->
         <div id="subtopic76" class="sub-content" style="display: none;">
@@ -561,18 +700,86 @@
 
         <!--FORM ELEMENTS-->
         <div id="subtopic96" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Contents sa Topic 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton20" onclick="showNewContent('subtopic96', 'newContent20')">Next</button>
-        </div>
-        <div id="newContent20" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton20" onclick="showOriginalContent('subtopic96', 'newContent20', 'nextButton20')">Back</button>
-        </div>
+    		<div class="subtopic-box">
+        	<p class="centered-text">Contents sa Topic 1</p>
+        	<p>Additional text goes here, not centered.</p>
+    	</div>
+        <button id="nextButton20" onclick="showNewContent('subtopic96', 'newContent20')">Next</button>
+	</div>
+
+	<div id="newContent20" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question96" ansValue="Next</button>"><span class="exercise">Exercise 1:</span> Complete the line of code, where in the button shows "Next"</p>
+	        <pre>&lt;button type="button" onclick="alert('Hello World!')"><input type="text" id="answer96" name="attribute_info" size="13" maxlength="13"></pre>
+	        <Button id="button96" class="submit" onclick="showAnswer('question96', 'answer96')">Submit</button>
+	        <Button id="button_96" class="submit" onclick="checkAnswer('question96', 'answer96')">Show Answer</button>  
+	    </div>
+	        <button id="backButton20" onclick="showOriginalContent('subtopic96', 'newContent20', 'nextButton20')">Back</button>
+	</div>
+
+	<div id="newContent20" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question97" ansValue="red"><span class="exercise">Exercise 2:</span> Fill in the value.</p>
+	        <pre>
+	            &lt;form action="/process" method="post">
+	                &lt;label for="color">Select your favorite color:&lt;/label>
+	                &lt;select id="color" name="color">
+	                    &lt;option value="<input type="text" id="answer97" name="attribute_info" size="3" maxlength="3">">Red&lt;/option>
+	                    &lt;option value="green">Green&lt;/option>
+	                    &lt;option value="blue">Blue&lt;/option>
+	                &lt;/select>
+	                &lt;br>
+	                &lt;input type="submit" value="Submit">
+	            &lt;/form>
+	        </pre>
+	        <input type="text" id="answer97" name="attribute_info" size="13" maxlength="13"></pre>
+	        <Button id="button97" class="submit" onclick="showAnswer('question97', 'answer97')">Submit</button>
+	        <Button id="button_97" class="submit" onclick="checkAnswer('question97', 'answer97')">Show Answer</button>  
+	    </div>
+	        <button id="backButton20" onclick="showOriginalContent('subtopic97', 'newContent20', 'nextButton20')">Back</button>
+	</div>
+
+	<div id="newContent20" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question98" ansValue="Feedback"><span class="exercise">Exercise 3:</span> Analyze and fill in the what is asked for.</p>
+	        <pre>
+	            &lt;form action="/submit" method="post">
+	                &lt;label for="feedback"><input type="text" id="answer98" name="attribute_info" size="8" maxlength="8">&lt;/label>
+	                &lt;textarea id="feedback" name="feedback" rows="5" cols="30">&lt;/textarea>
+	                &lt;br>
+	                &lt;input type="submit" value="Submit">
+	                &lt;/form>
+	        </pre>
+	        <Button id="button98" class="submit" onclick="showAnswer('question98', 'answer98')">Submit</button>
+	        <Button id="button_98" class="submit" onclick="checkAnswer('question98', 'answer98')">Show Answer</button>  
+	    </div>
+	        <button id="backButton20" onclick="showOriginalContent('subtopic98', 'newContent20', 'nextButton20')">Back</button>
+	</div>
+
+	<div id="newContent20" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question99" ansValue="12"><span class="exercise">Exercise 4:</span> How long should the row be to show the just the message.</p>
+	        <pre>
+	            &lt;textarea name="message" rows="<input type="text" id="answer99" name="attribute_info" size="12" maxlength="12">">
+	                Hello World!
+	                &lt;/textarea>
+	        </pre>
+	        <Button id="button99" class="submit" onclick="showAnswer('question99', 'answer99')">Submit</button>
+	        <Button id="button_99" class="submit" onclick="checkAnswer('question99', 'answer99')">Show Answer</button>  
+	    </div>
+	        <button id="backButton20" onclick="showOriginalContent('subtopic99', 'newContent20', 'nextButton20')">Back</button>
+	</div>
+
+	<div id="newContent20" class="sub-content" style="display: none;">
+	    <div class="subtopic-box">
+	        <p id="question100" ansValue="input"><span class="exercise">Exercise 4:</span> What element allows the user to put something, depending on the type attribute?</p>
+	        <input type="text" id="answer100" name="attribute_info" size="5" maxlength="5">">
+	        <Button id="button100" class="submit" onclick="showAnswer('question100', 'answer100')">Submit</button>
+	        <Button id="button_100" class="submit" onclick="checkAnswer('question100', 'answer100')">Show Answer</button>  
+	    </div>
+	        <button id="backButton20" onclick="showOriginalContent('subtopic100', 'newContent20', 'nextButton20')">Back</button>
+	</div>
+
 
         <!--INPUT TYPES-->
         <div id="subtopic101" class="sub-content" style="display: none;">
