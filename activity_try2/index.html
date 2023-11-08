@@ -387,7 +387,7 @@
           <button id="nextButton7" class="nxtButton" onclick="showNewContent('subtopic31', 'newContent7')">Next</button>
 	</div>
       
-        <div id="newContent31" class="sub-content" style="display: none;">
+        <div id="newConten7" class="sub-content" style="display: none;">
             <div class="subtopic-box">
                 <p class="centered-text">Fill in the blank</p>
                 <p id="question31" ansValue="readability"> HTML comments are a helpful tool for improving code <input type="text" id="answer31" name="attribute_info" size="10" maxlength="10"> and collaborating with others when working on web development projects.</p>
@@ -1060,31 +1060,68 @@
         </div>
 
         <!--FORM ELEMENTS-->
-        <div id="subtopic96" class="sub-content" style="display: none;">
-    		<div class="subtopic-box">
-        	<p class="centered-text">HTML Form Elements</p>
-        	<p>The HTML &lt;form> element can contain one or more of the following form elements:</p>
-		<ul>&lt;input> - The &lt;input> element can be displayed in several ways, depending on the type attribute.</ul>
-		<ul>&lt;label> - The &lt;label> element defines a label for several form elements.</ul>
-		<ul>&lt;select> and &lt;option> - The &lt;select> element defines a drop-down list.The <option> element defines an option that can be selected. By default, the first item in the drop-down list is selected. To define a pre-selected option, add the selected attribute to the option</ul>
-		<ul>&lt;textarea> - he &lt;textarea> element defines a multi-line input field (a text area)</ul>
-		<ul>&lt;button> - The &lt;button> element defines a clickable button</ul>
-		<ul>&lt;fieldset> and &lt;legend> - The &lt;fieldset> element is used to group related data in a form. The &lt;legend> element defines a caption for the &lt;fieldset> element.</ul>
-		<ul>&lt;datalist> - The &lt;datalist> element specifies a list of pre-defined options for an &lt;input> element.</ul>
-		<ul>&lt;output> - The &lt;output> element represents the result of a calculation (like one performed by a script).</ul>
-		<ul>&lt;optgroup></ul>
-    	</div>
-        <button id="nextButton20" class="nxtButton" onclick="showNewContent('subtopic96', 'newContent20')">Next</button>
-	</div>
-
-	<div id="newContent20" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question96" ansValue="Next</button>"><span class="exercise">Exercise 1:</span> Complete the line of code, where in the button shows "Next"</p>
-	        <pre>&lt;button type="button" onclick="alert('Hello World!')"><input type="text" id="answer96" name="attribute_info" size="13" maxlength="13"></pre>
-	        <Button id="button96" class="submit" onclick="showAnswer('question96', 'answer96')">Submit</button>
-	        <Button id="button_96" class="submit" onclick="checkAnswer('96', 'question96', 'answer96')">Show Answer</button>  
-	    </div>
-	        <button id="backButton20"  class="bckButton" onclick="showOriginalContent('subtopic96', 'newContent20', 'nextButton20')">Back</button>
+        <div id="subtopic91" class="sub-content" style="display: none;">
+          <div class="subtopic-box">
+              <p class="centered-text"><strong>HTML Form Attributes Tutorial</strong></p>
+              <p>HTML forms allow users to input data and interact with web applications. Form attributes are used to define the characteristics and behavior of HTML forms. Here are some important form attributes:</p>
+      
+              <p><strong>1. `action` Attribute:</strong></p>
+              <p>The `action` attribute specifies the URL where the form data will be sent when the user submits the form.</p>
+              <p>Example: &lt;form action="submit.php" method="post"&gt;</p>
+      
+              <p><strong>1. `action` Attribute:</strong></p>
+              <p>The `action` attribute specifies the URL where the form data will be sent when the user submits the form.</p>
+              <p>Example: &lt;form action="submit.php" method="post"&gt;</p>
+      
+              <p><strong>2. `method` Attribute:</strong></p>
+              <p>The `method` attribute specifies how the form data will be sent to the server. It can be either "get" or "post."</p>
+              <p>"get" appends data to the URL, while "post" sends data in the request body.</p>
+              <p>Example: &lt;form action="submit.php" method="post"&gt;</p>
+      
+              <p><strong>3. `name` Attribute:</strong></p>
+              <p>The `name` attribute assigns a name to the form element, which is used when processing the form data on the server.</p>
+              <p>Example: &lt;input type="text" name="username"&gt;</p>
+      
+              <p><strong>4. `id` Attribute:</strong></p>
+              <p>The `id` attribute assigns a unique identifier to the form element, which can be used for JavaScript interactions or CSS styling.</p>
+              <p>Example: &lt;input type="text" id="user-input"&gt;</p>
+      
+              <p><strong>5. `placeholder` Attribute:</strong></p>
+              <p>The `placeholder` attribute provides a hint or example of the expected input to the user.</p>
+              <p>Example: &lt;input type="text" placeholder="Enter your name"&gt;</p>
+      
+              <p><strong>6. `required` Attribute:</strong></p>
+              <p>The `required` attribute makes a form field mandatory, and the user must provide a value before submitting the form.</p>
+              <p>Example: &lt;input type="email" name="email" required&gt;</p>
+      
+              <p><strong>7. `readonly` Attribute:</strong></p>
+              <p>The `readonly` attribute makes a form field read-only, preventing the user from editing the value.</p>
+              <p>Example: &lt;input type="text" name="readonlyField" value="Read-only text" readonly&gt;</p>
+      
+              <p><strong>8. `disabled` Attribute:</strong></p>
+              <p>The `disabled` attribute disables a form field, making it non-interactable and visually muted.</p>
+              <p>Example: &lt;input type="text" name="disabledField" value="Disabled text" disabled&gt;</p>
+      
+              <p><strong>9. `value` Attribute:</strong></p>
+              <p>The `value` attribute sets the initial value of a form field.</p>
+              <p>Example: &lt;input type="text" name="initialValueField" value="Default value"&gt;</p>
+      
+              <p><strong>10. `autocomplete` Attribute:</strong></p>
+              <p>The `autocomplete` attribute controls whether the browser should provide autocomplete suggestions for the input field.</p>
+              <p>Example: &lt;input type="text" name="autocompleteField" autocomplete="off"&gt;</p>
+      
+              <p>These are some of the commonly used HTML form attributes. Understanding and using these attributes effectively is essential for building interactive and user-friendly web forms. HTML forms are the primary means by which users interact with web applications, making them a critical part of web development.</p>
+          </div>
+          <button id="nextButton19" class="nxtButton" onclick="showNewContent('subtopic91', 'newContent19')">Next</button>
+        </div>
+        <div id="newContent19" class="sub-content" style="display: none;">
+            <div class="subtopic-box">
+              <p class="centered-text">Fill in the blank</p>
+              <p id="question92" ansValue="action"> The <input type="text" id="answer92" name="attribute_info" size="10" maxlength="10">attribute specifies the URL where the form data will be sent when the user submits the form.</p>
+              <Button id="attribute_show_btn92" class="submit" onclick="showAnswer('question92', 'answer92', 'attribute_show_btn92', 'attribute_sub_btn92')">Show Answer</Button>
+            </div>
+            <button id="backButton19"  class="bckButton" onclick="showOriginalContent('subtopic91', 'newContent19', 'nextButton19')">Back</button>
+        </div>
 	</div>
 
 	<div id="newContent20" class="sub-content" style="display: none;">
@@ -1995,36 +2032,36 @@ h1 {
             <div id="subtopic92" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                   <p class="centered-text">Fill in the blank</p>
-                  <p id="question92" ansValue="email"> To create an input field for entering an email address, you can use the input type <input type="text" id="answer92" name="attribute_info" size="10" maxlength="10">.</p>
+                  <p id="question92" ansValue="id"> The <input type="text" id="answer92" name="attribute_info" size="10" maxlength="10">  attribute assigns a unique identifier to the form element, which can be used for JavaScript interactions or CSS styling. </p>
                   <Button id="attribute_show_btn92" class="submit" onclick="showAnswer('question92', 'answer92', 'attribute_show_btn92', 'attribute_sub_btn92')">Show Answer</Button>
-                  <button id="attribute_sub_btn92" class="submit" onclick="checkAnswer('92', 'question92', 'answer92')">Submit Answer</button>
+                  <button id="attribute_sub_btn92" class="submit" onclick="checkAnswer('question92', 'answer92')">Submit Answer</button>
                 </div>
               </div>
               
               <div id="subtopic93" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                   <p class="centered-text">Fill in the blank</p>
-                  <p id="question93" ansValue="post"> The formenctype attribute specifies how the form-data should be encoded when submitted, and it is used for forms with the method= <input type="text" id="answer93" name="attribute_info" size="10" maxlength="10">.</p>
+                  <p id="question93" ansValue="disabled"> The <input type="text" id="answer93" name="attribute_info" size="10" maxlength="10"> attribute disables a form field, making it non-interactable and visually muted.</p>
                   <Button id="attribute_show_btn93" class="submit" onclick="showAnswer('question93', 'answer93', 'attribute_show_btn93', 'attribute_sub_btn93')">Show Answer</Button>
-                  <button id="attribute_sub_btn93" class="submit" onclick="checkAnswer('93', 'question93', 'answer93')">Submit Answer</button>
+                  <button id="attribute_sub_btn93" class="submit" onclick="checkAnswer('question93', 'answer93')">Submit Answer</button>
                 </div>
               </div>
               
               <div id="subtopic94" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                   <p class="centered-text">Fill in the blank</p>
-                  <p id="question94" ansValue="default"> The value attribute sets the <input type="text" id="answer94" name="attribute_info" size="10" maxlength="10">value for the input, which can be pre-filled when the page loads.</p>
+                  <p id="question94" ansValue="method "> The  <input type="text" id="answer94" name="attribute_info" size="10" maxlength="10">method attribute specifies how the form data will be sent to the server. It can be either "get" or "post." "get" appends data to the URL, while "post" sends data in the request body. <form action="submit.php" method="post"></p>
                   <Button id="attribute_show_btn94" class="submit" onclick="showAnswer('question94', 'answer94', 'attribute_show_btn94', 'attribute_sub_btn94')">Show Answer</Button>
-                  <button id="attribute_sub_btn94" class="submit" onclick="checkAnswer('94', 'question94', 'answer94')">Submit Answer</button>
+                  <button id="attribute_sub_btn94" class="submit" onclick="checkAnswer('question94', 'answer94')">Submit Answer</button>
                 </div>
               </div>
         
               <div id="subtopic95" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
                   <p class="centered-text">Fill in the blank</p>
-                  <p id="question95" ansValue="initial"> The autofocus attribute, when applied, sets <input type="text" id="answer95" name="attribute_info" size="10" maxlength="10">focus on the input when the page loads.</p>
+                  <p id="question95" ansValue="name"> The <input type="text" id="answer95" name="attribute_info" size="10" maxlength="10"> attribute assigns a name to the form element, which is used when processing the form data on the server. </p>
                   <Button id="attribute_show_btn95" class="submit" onclick="showAnswer('question95', 'answer95', 'attribute_show_btn95', 'attribute_sub_btn95')">Show Answer</Button>
-                  <button id="attribute_sub_btn95" class="submit" onclick="checkAnswer('95', 'question95', 'answer95')">Submit Answer</button>
+                  <button id="attribute_sub_btn95" class="submit" onclick="checkAnswer('question95', 'answer95')">Submit Answer</button>
                 </div>
               </div>
 
