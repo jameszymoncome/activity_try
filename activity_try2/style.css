@@ -1,4 +1,11 @@
 /* The side navigation menu */
+body {
+  background-image: url('images/background.gif'); /* Specify the path to your GIF file */
+  background-size: cover; /* Cover the entire viewport with the GIF */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Optional - prevents the background from scrolling with the content */
+}
+
 .sidenav {
     height: 95%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -227,7 +234,32 @@
 .submit:hover {
   background-color:orange;
 }
-
+.nxtButton {
+  font-size: 20px;
+  padding: 0.5em 1em;
+  background-color: var(--clr-accent);
+  border: 3px solid;
+  border-color: rgb(249, 88, 88);
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.nxtButton:hover {
+  transform: translateX(10px);
+  background-color: rgb(249, 88, 88);
+}
+.bckButton {
+  font-size: 20px;
+  padding: 0.5em 1em;
+  background-color: var(--clr-accent);
+  border: 3px solid;
+  border-color: rgb(249, 88, 88);
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.bckButton:hover {
+  transform: translateX(10px);
+  background-color: rgb(249, 88, 88);
+}
 
 
 
