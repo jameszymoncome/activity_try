@@ -111,19 +111,34 @@ function showAnswer(answerId, inputId, buttonId1, buttonId2){
 }
 
 const exercisesId_array= [];
-function checkAnswer(questionId, inputId){
+function checkAnswer(exe_Id, questionId, inputId, currentContent){
 // Get specific question by ID
 var thisQuestionId = document.getElementById(questionId);
+var exercise_id = document.getElementById(exe_Id);
+current = document.getElementById(currentContent);
+console.log("exe id:" + exe_Id);
+var number = Number(exe_Id) + 1;
+var nextcont = ("subtopic" + number);
 // Get answer value of the specific question
 var ans = thisQuestionId.getAttribute("ansValue");
 // Get user input value
 var userAsnwer = document.getElementById(inputId).value;
 // Checks if user input is same with set correct answer
 if (ans === userAsnwer){
+  if (!(exercisesId_array.includes(questionId))){
+    progress(questionId);
+  }
     alert( userAsnwer + " is correct!");
-    if (!(exercisesId_array.includes(questionId))){
-      progress(questionId);
-    }
+    exercise_id.style.backgroundColor = "green";
+    exercise_id.style.color = "white";
+    const content = document.getElementById(nextcont);
+    // Hide all content sections
+    const allContent = document.querySelectorAll('.sub-content');
+    allContent.forEach(function(contentSection) {
+        contentSection.style.display = 'none';
+    });
+    // Show the clicked content section
+    content.style.display = 'block';
 } else if (userAsnwer.length <= 0){
     alert("You have to fill the blank!");
 } else {
