@@ -304,7 +304,10 @@
         </div>
         <div id="newContent5" class="sub-content" style="display: none;">
             <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
+                <h2>What tag do you need to put at the start of the paragraph to italicize it?</h2>
+                <p id="question21" ansValue="<i>">&lt;p> <input type="text" id="answer21" name="attribute_info">"You are so beautiful."&lt;/p></p>
+                <Button id="attribute_show_btn21" class="submit" onclick="showAnswer('question21', 'answer21', 'attribute_show_btn21', 'attribute_sub_btn21')">Show Answer</Button>
+                <Button id="attribute_sub_btn21" class="submit" onclick="checkAnswer('question21', 'answer21')">Submit Answer</Button>
             </div>
             <button id="backButton5" onclick="showOriginalContent('subtopic21', 'newContent5', 'nextButton5')">Back</button>
         </div>
@@ -725,7 +728,17 @@
         </div>
         <div id="newContent16" class="sub-content" style="display: none;">
             <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
+                <h2>Change the background color of the body elements to "blue".</h2><br>
+                <p id="question76" ansValue="blue">
+                    &lt;body&gt;
+                    &lt;script&gt;
+                    document.body.style.backgroundColor = "<input type="text" id="answer76" name="attribute_info">";
+
+                    &lt;/script&gt;
+                    &lt;/body&gt;
+                </p>
+                <Button id="attribute_show_btn76" class="submit" onclick="showAnswer('question76', 'answer76', 'attribute_show_btn76', 'attribute_sub_btn76')">Show Answer</Button>
+                <Button id="attribute_sub_btn76" class="submit" onclick="checkAnswer('question76', 'answer76')">Submit Answer</Button>
             </div>
             <button id="backButton16" onclick="showOriginalContent('subtopic76', 'newContent16', 'nextButton16')">Back</button>
         </div>
@@ -999,7 +1012,10 @@
         </div>
         <div id="newContent22" class="sub-content" style="display: none;">
             <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
+                <h2>The missing attribute to specify a placeholder text of "Enter your username" for the input field is:</h2><br>
+                <p id="question106" ansValue="placeholder= Enter your username">&lt;p> label for="username">Username:label input type="text" id="username"<input type="text" id="answer106" name="attribute_info">&lt;/p></p>
+                <Button id="attribute_show_btn106" class="submit" onclick="showAnswer('question106', 'answer106', 'attribute_show_btn106', 'attribute_sub_btn106')">Show Answer</Button>
+                <Button id="attribute_sub_btn106" class="submit" onclick="checkAnswer('question106', 'answer106')">Submit Answer</Button>
             </div>
             <button id="backButton22" onclick="showOriginalContent('subtopic106', 'newContent22', 'nextButton22')">Back</button>
         </div>
@@ -1185,26 +1201,34 @@ I Love You
             <!--FORMATTING EXERCISES-->
             <div id="subtopic22" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 2</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Create more extra importance for the word "family" in the paragraph below.</h2><br>
+                    <p id="question22" ansValue="<strong>">&lt;p>One of the biggest parts of our society is a good <input type="text" id="answer22" name="attribute_info"> family &lt;/strong> that gives us good communication and well-being.&lt;/p></p>
+                    <Button id="attribute_show_btn22" class="submit" onclick="showAnswer('question22', 'answer22', 'attribute_show_btn22', 'attribute_sub_btn22')">Show Answer</Button>
+                    <Button id="attribute_sub_btn22" class="submit" onclick="checkAnswer('question22', 'answer22')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic23" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 3</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Apply tags to the paragraph below to format the text as a paragraph.</h2><br>
+                    <p id="question23" ansValue="</text>">&lt;p>&lt;text>HTML formatting is one of the useful parts of HTML coding <input type="text" id="answer23" name="attribute_info">&lt;/p></p>
+                    <Button id="attribute_show_btn23" class="submit" onclick="showAnswer('question23', 'answer23', 'attribute_show_btn23', 'attribute_sub_btn23')">Show Answer</Button>
+                    <Button id="attribute_sub_btn23" class="submit" onclick="checkAnswer('question23', 'answer23')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic24" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 4</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Highlight the " Premier" in the CNSC Vision..</h2><br>
+                    <p id="question24" ansValue="<mark>">CNSC as a <input type="text" id="answer24" name="attribute_info">Premier&lt;/mark>Higher Education Institution in the Bicol Region.</p>
+                    <Button id="attribute_show_btn24" class="submit" onclick="showAnswer('question24', 'answer24', 'attribute_show_btn24', 'attribute_sub_btn24')">Show Answer</Button>
+                    <Button id="attribute_sub_btn24" class="submit" onclick="checkAnswer('question24', 'answer24')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic25" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 5</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Place the "lle" above other text.</h2><br>
+                    <p id="question25" ansValue="</sup>">Robert a présenté son rapport à M&lt;sup>lle<input type="text" id="answer25" name="attribute_info"> Bernard.</p>
+                    <Button id="attribute_show_btn25" class="submit" onclick="showAnswer('question25', 'answer25', 'attribute_show_btn25', 'attribute_sub_btn25')">Show Answer</Button>
+                    <Button id="attribute_sub_btn25" class="submit" onclick="checkAnswer('question25', 'answer25')">Submit Answer</Button>
                 </div>
             </div>
 
@@ -1571,26 +1595,74 @@ I Love You
             <!--SCRIPTS EXERCISES-->
             <div id="subtopic77" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 2</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Change the text color of the h1 element to "red"</h2><br>
+                    <p id="question77" ansValue="red">
+                        &lt;body&gt;
+                        &lt;h1 id="heading"&gt;Hello, world!&lt;/h1&gt;
+                        &lt;script&gt;
+                        document.getElementById("heading").style.color = "<input type="text" id="answer77" name="attribute_info">";
+                        
+                        &lt;/script&gt;
+                        &lt;/body&gt;
+                    </p>
+                    <Button id="attribute_show_btn77" class="submit" onclick="showAnswer('question77', 'answer77', 'attribute_show_btn77', 'attribute_sub_btn77')">Show Answer</Button>
+                    <Button id="attribute_sub_btn77" class="submit" onclick="checkAnswer('question77', 'answer77')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic78" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 3</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Hide the img element with the id "myImage".</h2><br>
+                    <p id="question78" ansValue="none">
+                        &lt;body&gt;
+                        &lt;img id="myImage" src="image.jpg" alt="Image"&gt;
+                        &lt;script&gt;
+                        document.getElementById("myImage").style.display = "<input type="text" id="answer78" name="attribute_info">";
+                       
+                        &lt;/script&gt;
+                        &lt;/body&gt;
+                    </p>
+                    <Button id="attribute_show_btn78" class="submit" onclick="showAnswer('question78', 'answer78', 'attribute_show_btn78', 'attribute_sub_btn78')">Show Answer</Button>
+                    <Button id="attribute_sub_btn78" class="submit" onclick="checkAnswer('question78', 'answer78')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic79" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 4</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Set the border of all div elements to "2px solid green".</h2><br>
+                    <p id="question79" ansValue="2px solid green">
+                        &lt;body&gt;
+                        &lt;div class="box"&gt;Box 1&lt;/div&gt;
+                        &lt;div class="box"&gt;Box 2&lt;/div&gt;
+                        &lt;script&gt;
+                        var divList = document.getElementsByTagName("div");
+                        for (var i = 0; i &lt; divList.length; i++) {
+                            divList[i].style.border = "<input type="text" id="answer79" name="attribute_info">";
+                        }
+                   
+                        &lt;/script&gt;
+                        &lt;/body&gt;
+                    </p>
+                    <Button id="attribute_show_btn79" class="submit" onclick="showAnswer('question79', 'answer79', 'attribute_show_btn79', 'attribute_sub_btn79')">Show Answer</Button>
+                    <Button id="attribute_sub_btn79" class="submit" onclick="checkAnswer('question79', 'answer79')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic80" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 5</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>Change the font family of all p elements to "Arial".</h2><br>
+                    <p id="question80" ansValue="Arial">
+                        &lt;body&gt;
+                        &lt;p&gt;Paragraph 1&lt;/p&gt;
+                        &lt;p&gt;Paragraph 2&lt;/p&gt;
+                        &lt;script&gt;
+                        var pList = document.getElementsByTagName("p");
+                        for (var i = 0; i &lt; pList.length; i++) {
+                            pList[i].style.fontFamily = "<input type="text" id="answer80" name="attribute_info">";
+                        }
+               
+                        &lt;/script&gt;
+                        &lt;/body&gt;
+                    </p>
+                    <Button id="attribute_show_btn80" class="submit" onclick="showAnswer('question80', 'answer80', 'attribute_show_btn80', 'attribute_sub_btn80')">Show Answer</Button>
+                    <Button id="attribute_sub_btn80" class="submit" onclick="checkAnswer('question80', 'answer80')">Submit Answer</Button>
                 </div>
             </div>
 
@@ -1777,26 +1849,34 @@ I Love You
             <!--INPUT ATTRIBUTES EXERCISES-->
             <div id="subtopic107" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 2</p>
-                    <p>Additional text goes here, not centered.</p>
+                     <h2>The missing attribute to set a maximum character limit of 50 for the input field is:</h2><br>
+                    <p id="question107" ansValue="maxlength=50">&lt;p> label for="bio">Bio: /label input type="text" id="bio"<input type="text" id="answer107" name="attribute_info">&lt;/p></pre>
+                    <Button id="attribute_show_btn107" class="submit" onclick="showAnswer('question107', 'answer107', 'attribute_show_btn107', 'attribute_sub_btn107')">Show Answer</Button>
+                    <Button id="attribute_sub_btn107" class="submit" onclick="checkAnswer('question107', 'answer107')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic108" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 3</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>The missing attribute to make the input field required is:</h2><br>
+                    <p id="question108" ansValue="required">&lt;p> label for="email">Email: /label input type="email" id="email"<input type="text"  id="answer108" name="attribute_info">&lt;/p></p>
+                    <Button id="attribute_show_btn108" class="submit" onclick="showAnswer('question108', 'answer108', 'attribute_show_btn108', 'attribute_sub_btn108')">Show Answer</Button>
+                    <Button id="attribute_sub_btn108" class="submit" onclick="checkAnswer('question108', 'answer108')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic109" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 4</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>The missing attribute to specify a default value of "Lovely Joyce" for the input field is:</h2><br>
+                    <p id="question109" ansValue="value=Lovely Joyce">&lt;p>label for="name">Name:/label input type="text" id="name"<input type="text" id="answer109" name="attribute_info">&lt;/p></p>
+                    <Button id="attribute_show_btn109" class="submit" onclick="showAnswer('question109', 'answer109', 'attribute_show_btn109', 'attribute_sub_btn109')">Show Answer</Button>
+                    <Button id="attribute_sub_btn109" class="submit" onclick="checkAnswer('question109', 'answer109')">Submit Answer</Button>
                 </div>
             </div>
             <div id="subtopic110" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 5</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <h2>The missing attribute to disable the input field is:</h2><br>
+                    <p id="question110" ansValue="disabled">&lt;p>label for="phone">Phone:/label input type="text" id="phone"<input type="text" id="answer110" name="attribute_info">&lt;/p></p>
+                    <Button id="attribute_show_btn110" class="submit" onclick="showAnswer('question110', 'answer110', 'attribute_show_btn110', 'attribute_sub_btn110')">Show Answer</Button>
+                    <Button id="attribute_sub_btn110" class="submit" onclick="checkAnswer('question110', 'answer110')">Submit Answer</Button>
                 </div>
             </div>
             
