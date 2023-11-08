@@ -226,8 +226,28 @@
                 <!--ATTRIBUTES-->
               <div id="subtopic1" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 1</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <p class="centered-text">HTML Attributes</p>
+                    <p style="color: black;">
+                      An HTML attribute is a piece of information that provides additional context or instructions for an HTML element. It is essentially a "modifier" that allows you to customize the behavior or appearance of an element. <br>
+                      
+                      HTML attributes serve a variety of purposes, including: <br>
+
+                      <ul>
+                        <li>Adding functionality: Attributes can be used to define the behavior of elements, such as making a button interactive or enabling an input field for user input.</li>
+                        <li>Controlling appearance: Attributes can be used to style elements, such as changing their color, font, or size.</li>
+                        <li>Providing additional information: Attributes can be used to add context to elements, such as providing alternative text for images or indicating the language of the page.</li>
+                      </ul>
+                      
+                      Here are some examples of commonly used HTML attributes and their purposes:
+                      <ul>
+                      <li>href: Specifies the URL of a link.</li>
+                      <li>src: Specifies the path to an image file to be displayed.</li>
+                      <li>alt: Provides alternative text for an image, which is displayed when the image cannot be loaded or for users with visual impairments..</li>
+                      <li>id: Assigns a unique identifier to an element, which can be used for styling, scripting, or linking.</li>
+                      <li>class: Applies one or more CSS classes to an element, allowing for targeted styling.</li>                      
+                      </ul>
+                      
+                      HTML attributes play a crucial role in defining the structure, behavior, and appearance of web pages. They provide a flexible and powerful mechanism for creating interactive and visually appealing websites.</p>
                 </div>
                 <button id="nextButton1" onclick="showNewContent('subtopic1', 'newContent1')">Next</button>
             </div>
@@ -246,8 +266,31 @@
             <!--HEADINGS-->
             <div id="subtopic6" class="sub-content" style="display: none;">
               <div class="subtopic-box">
-                  <p class="centered-text">Contents sa Topic 1</p>
-                  <p>Additional text goes here, not centered.</p>
+                  <p class="centered-text">HTML Headings</p>
+                  <p style="color: black;">
+                    HTML headings, also known as section headings, are used to organize and structure content on a web page. They are defined using the < h1> to < h6> tags, where < h1> represents the most important heading and < h6> represents the least important. Headings are important for both search engine optimization (SEO) and user experience (UX).
+                    <br>
+                    <br>
+                    <div style="text-align: center;">Significance of HTML Headings </div><br>
+                    
+                    HTML headings serve several important purposes:
+                    <ul>
+                      <li>Content organization: Headings help to divide content into clear sections, making it easier for users to scan and understand the page's structure.</li>
+                      <li>SEO benefits: Search engines use headings to understand the hierarchy and importance of content on a page. Properly structured headings can improve a page's ranking in search results.</li>
+                      <li>Accessibility: Headings provide context and structure for screen readers and other assistive technologies, making it easier for people with disabilities to navigate and understand web content.</li>
+                      <li>Visual hierarchy: Headings are typically displayed with larger font sizes and bolder styles, creating a visual hierarchy that guides users' attention through the page's content.</li>
+                    </ul>
+                    Guidelines for Using HTML Headings
+                    <ul>
+                      <li>Use headings consistently: Start with < h1> for the main title and progress sequentially through < h2>, < h3>, and so on for subheadings.</li>
+                      <li>Use headings meaningfully: Headings should accurately reflect the content of the section they introduce.</li>
+                      <li>Avoid skipping heading levels: Do not skip levels, such as going directly from < h1> to < h3>. Maintain a clear hierarchical structure.</li>
+                      <li>Use one < h1> per page: Each page should have only one < h1> heading, which represents the overall topic of the page.</li>
+                      <li>Don't use headings for styling: Use CSS to style headings rather than using them solely to make text larger or bolder.</li>
+                      <li>Consider semantic headings: Consider using semantic heading elements like < nav> for navigation, < article> for main content, and < aside> for sidebar content.</li>
+                    </ul>
+                    By following these guidelines, you can effectively use HTML headings to improve the organization, accessibility, and SEO of your web pages.
+                  </p>
               </div>
 
               <button id="nextButton2" onclick="showNewContent('subtopic6', 'newContent2')">Next</button>
@@ -297,7 +340,7 @@
         <!--FORMATTING-->
         <div id="subtopic21" class="sub-content" style="display: none;">
             <div class="subtopic-box">
-                <p class="centered-text">Contents sa Topic 1</p>
+                <p class="centered-text">HTML Formatting</p>
                 <p>Additional text goes here, not centered.</p>
             </div>
             <button id="nextButton5" onclick="showNewContent('subtopic21', 'newContent5')">Next</button>
@@ -384,8 +427,17 @@
         <!--exercise 1-->
         <div id="subtopic46" class="sub-content" style="display: none;">
             <div class="subtopic-box">
-                <p class="centered-text">HTML image element</p>
-                <p>In order to put a simple image on a web page, we use the < img > element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt.</p>
+                <p class="centered-text">HTML Image</p>
+                <p>
+                  In order to put a simple image on a web page, we use the < img > element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt.
+                  
+                  The src attribute contains a URL pointing to the image you want to embed in the page. As with the href attribute for < a > elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.
+                  
+                  The next attribute we'll look at is alt. Its value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection.
+                  
+                  You can use the width and height attributes to specify the width and height of your image. They are given as integers without a unit, and represent the image's width and height in pixels.
+                  
+                  The < a> element in HTML is used to create links. When you wrap an img element in an a element, you create a link to the image. This means that when a user clicks on the image, they will be taken to the URL specified in the href attribute of the a element.</p>
             </div>
             <button id="nextButton46" onclick="showNewContent('subtopic46', 'newContent46')">Next</button>
         </div>
@@ -749,7 +801,17 @@
         <div id="subtopic81" class="sub-content" style="display: none;">
             <div class="subtopic-box">
                 <p class="centered-text">HTML Computercode </p>
-                <p>The < code > tag in HTML is used to define the piece of computer code. During the creation of web pages sometimes there is a need to display computer programming code. It could be done by any basic heading tag of HTML but HTML provides a separate tag which is < code > tag. HTML provides many methods for text-formatting but < code > tag is displayed with fixed letter size, font, and spacing.</p>
+                <p>Computercode
+
+                  The < code > tag in HTML is used to define the piece of computer code. During the creation of web pages sometimes there is a need to display computer programming code. It could be done by any basic heading tag of HTML but HTML provides a separate tag which is < code > tag. HTML provides many methods for text-formatting but < code > tag is displayed with fixed letter size, font, and spacing.
+                  
+                  To display multiple lines of code on a web page, you can wrap the code in a < pre > element. The < pre > element will preserve the formatting of the code, including any line breaks.
+                  
+                  To create a code block with a title, you can use the < details> and < summary> elements. The < details> element allows you to create a collapsible section of content, and the < summary> element provides a title for the collapsible section.
+                  
+                  To highlight specific keywords in the code, you can use the < span> element. The &lt;span> element allows you to apply CSS styles to a specific section of text. 
+                  
+                  The HTML < kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p>
             </div>
             <button id="nextButton81" onclick="showNewContent('subtopic81', 'newContent81')">Next</button>
         </div>
