@@ -487,17 +487,15 @@ Your text content goes here.: This is the actual text or content of your paragra
             
             </ol>
             </div>
+		<div>
             <button id="nextButton6" class="nxtButton" onclick="showNewContent('subtopic21', 'newContent5')">Next</button>
-        </div>
-
-            <button id="nextButton5" class="nxtButton" onclick="showNewContent('subtopic21', 'newContent5')">Next</button>
         </div>
         <div id="newContent5" class="sub-content" style="display: none;">
             <div class="subtopic-box">
                 <h2>What tag do you need to put at the start of the paragraph to italicize it?</h2>
                 <p id="question21" ansValue="<i>">&lt;p> <input type="text" id="answer21" name="attribute_info">"You are so beautiful."&lt;/p></p>
                 <Button id="attribute_show_btn21" class="submit" onclick="showAnswer('question21', 'answer21', 'attribute_show_btn21', 'attribute_sub_btn21')">Show Answer</Button>
-                <Button id="attribute_sub_btn21" class="submit" onclick="checkAnswer('21', question21', 'answer21')">Submit Answer</Button>
+                <Button id="attribute_sub_btn21" class="submit" onclick="checkAnswer('21', 'question21', 'answer21')">Submit Answer</Button>
             </div>
             <button id="backButton5"  class="bckButton" onclick="showOriginalContent('subtopic21', 'newContent5', 'nextButton5')">Back</button>
         </div>
