@@ -13,7 +13,7 @@ body {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #27425D;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -24,7 +24,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
   }
@@ -35,7 +35,11 @@ body {
   }
   
   .sidenav a:hover, .dropdown-container:hover{
-    background-color: green;
+    background-color: #0E1F2F;
+  }
+
+  .sidenav a, .title{
+    padding-left: 0px;
   }
 
   span{
@@ -64,7 +68,7 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: white;
     display: block;
     border: none;
     background: none;
@@ -89,8 +93,8 @@ body {
   
   /* Add an active class to the active dropdown button */
   .active {
-    background-color: orange;
-    color: black;
+    background-color: #C38EB4;
+    color: white;
   }
   
   /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -103,7 +107,7 @@ body {
   .sub-menu{
     display: none;
   }
-  
+
   /* Optional: Style the caret down icon */
   .fa-caret-down {
     float: right;
@@ -114,7 +118,7 @@ body {
    .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: -23px;
+    padding-right: 8px;
     font-size: 36px;
   }
 
@@ -137,9 +141,9 @@ body {
     border: 1px solid #ddd; 
     padding: 10px; 
     margin: 10px 0; 
-    background-color: #f9f9f9; 
+    background-color: lightyellow; 
     border-radius: 5px; 
-    box-shadow: 0 0 5px rgba(221, 139, 31, 0.877); 
+    box-shadow: 0 0 5px rgba(15, 58, 134, 0.877); 
     height: 500px;
     transition: all 0.5s ease;
 
@@ -191,7 +195,7 @@ body {
   padding: 20px; 
   border: 1px solid #ccc; 
   border-radius: 5px; 
-  box-shadow: 0 0 5px rgba(221, 139, 31, 0.877); 
+  box-shadow: 0 0 5px #27425D; 
   height: 300px;
 }
 
@@ -254,33 +258,35 @@ body {
 
 .submit:hover {
   transform: translateX(10px);
-  background-color: rgb(251, 184, 59);
+  background-color: #8AA6CE;
 }
 .nxtButton {
   font-size: 20px;
   padding: 0.5em 1em;
   background-color: var(--clr-accent);
   border: 3px solid;
-  border-color: rgb(249, 88, 88);
+  border-color: black;
   border-radius: 15px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .nxtButton:hover {
   transform: translateX(10px);
-  background-color: rgb(249, 88, 88);
+  background-color: lightyellow;
 }
 .bckButton {
   font-size: 20px;
   padding: 0.5em 1em;
   background-color: var(--clr-accent);
   border: 3px solid;
-  border-color: rgb(249, 88, 88);
+  border-color: black;
   border-radius: 15px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .bckButton:hover {
   transform: translateX(10px);
-  background-color: rgb(249, 88, 88);
+  background-color: lightyellow;
 }
 
 
