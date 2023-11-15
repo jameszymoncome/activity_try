@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="images/icon" href="images/logo.png">
+        <title>Learn HTML</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/all.css">
     </head>
@@ -377,6 +379,7 @@ Your text content goes here.: This is the actual text or content of your paragra
         
         <div id="newContent5" class="sub-content" style="display: none;">
             <div class="subtopic-box">
+		<p class="centered-text" style="font-size: 25px;">Exercise 1</p><br>
                 <h2>What tag do you need to put at the start of the paragraph to italicize it?</h2>
                 <p id="question21" ansValue="<i>">&lt;p> <input type="text" id="answer21" name="attribute_info">"You are so beautiful."&lt;/p></p>
                 <Button id="attribute_show_btn21" class="submit" onclick="showAnswer('question21', 'answer21', 'attribute_show_btn21', 'attribute_sub_btn21')">Show Answer</Button>
@@ -510,6 +513,7 @@ CSS (Cascading Style Sheets):
         </div>
         <div id="newContent9" class="sub-content" style="display: none;">
             <div class="subtopic-box">
+		<p class="centered-text" style="font-size: 25px;">Exercise 1</p><br>
                 <h2>Use the correct HTML attribute to make the link open in the same window/tab as it was clicked.</h2>
               <div> 
                 <p id="question41" ansValue='"_self"'>&lt;a href="https://www.google.com/" target= <input type="text" id="answer41" name="attribute_info">&nbsp;&gt;Visit Google&lt;/a&gt;</p> 
@@ -577,6 +581,7 @@ CSS (Cascading Style Sheets):
         </div>
         <div id="newContent11" class="sub-content" style="display: none;">
             <div class="subtopic-box">
+		<p class="centered-text" style="font-size: 25px;">Exercise 1</p><br>
                 <h3>Create a student mark sheet table by filling in the blanks space below. Add one table cell at the end of the table. The table cell should have the value “75”.</h3><br>
             <div> 
               <p>&lt;h2&gt;&nbsp;Student Mark Sheet Table&lt;h2&gt;</p>
@@ -673,86 +678,6 @@ CSS (Cascading Style Sheets):
 	  </div>
 	  <button id="backButton13"  class="bckButton" onclick="showOriginalContent('subtopic61', 'newContent13', 'nextButton13')">Back</button>
 	</div>
-    
-	<div id="newContent13" class="sub-content" style="display: none;">
-	  <div class="subtopic-box">
-	    <p id="question62" ansValue="class name"><span class="exercise">Exercise 2:</span>The syntax for Class is a period(.) followed by:</p>
-	    <input type="text" id="answer62" name="attribute_info" size="10" maxlength="10">
-	    <Button id="button62" class="submit" onclick="showAnswer('question62', 'answer62')">Submit</button>
-	    <Button id="button_62" class="submit" onclick="checkAnswer('62', 'question62', 'answer62')">Show Answer</button>
-	    <p id="feedback2" class="feedback"></p>
-	  </div>
-	  <button id="backButton13" onclick="showOriginalContent('subtopic62', 'newContent13', 'nextButton13')">Back</button>
-	</div>
-
-	<div id="newContent13" class="sub-content" style="display: none;">
-	  <div class="subtopic-box">
-	    <p id="question63" ansValue="city"><span class="exercise">Exercise 3:</span> Fill in the missing parts with the class in the style
-	    </p>
-	    <pre>
-	      &lt;style>
-	      .city {
-	      font-family: 'Courier New', monospace;
-	      padding: 5px;
-	      border: 1px solid #ccc;
-	      resize: horizontal;}
-	      &lt;/style>
-	      &lt;/head>
-	      &lt;body>
-	      &lt;h1 class=<input type="text" id="answer63" name="attribute_info" size="4" maxlength="4">> This is h1 with class. &lt;/h1>
-	    </pre>
-	    <Button id="button63" class="submit" onclick="showAnswer('question63', 'answer63')">Submit</button>
-	    <Button id="button_63" class="submit" onclick="checkAnswer('63', 'question63', 'answer63')">Show Answer</button>
-	  </div>
-	  <button id="backButton13" onclick="showOriginalContent('subtopic63', 'newContent13', 'nextButton13')">Back</button>
-	</div>
-
-	<div id="newContent13" class="sub-content" style="display: none;">
-	  <div class="subtopic-box">
-	    <p id="question64" ansValue="City"><span>Exercise 4:</span> Use the upper case class on the second h1</p>
-	    <pre>
-	      &lt;style>
-	      .city {
-	        font-family: 'Courier New', monospace;
-	        padding: 5px;
-	        border: 1px solid #ccc;
-	        resize: horizontal;}
-	      .City {
-	        background-color: black;
-	      color: white;
-	      padding: 10px 20px;
-	      border: none;
-	      cursor: pointer;}
-	      &lt;/style>
-	      &lt;/head>
-	      &lt;body>
-	      &lt;h1 class="city"> This is the first h1.&lt;/h1>
-	      &lt;h1 class=<input type="text" id="answer64" name="attribute_info" size="4" maxlength="4">> This is the second h1.&lt;/h1></pre>
-	      <Button id="button64" class="submit" onclick="showAnswer('question64', 'answer64')">Submit</button>
-	      <Button id="button_64" class="submit" onclick="checkAnswer('64', 'question64', 'answer64')">Show Answer</button>  
-	</div>
-	  <button id="backButton13" onclick="showOriginalContent('subtopic64', 'newContent13', 'nextButton13')">Back</button>
-	</div>
-
-	<div id="newContent13" class="sub-content" style="display: none;">
-	  <div class="subtopic-box">
-	    <p id="question65" ansValue="background-color: black"><span class="exercise">Exercise 5:</span>Set the background color to black in class "city":</p>
-	    <pre>
-	      &lt;style> 
-	      .City {
-	      <input type="text" id="answer65" name="attribute_info" size="23" maxlength="23">;
-	      color: white;
-	      padding: 10px 20px;
-	      border: none;
-	      cursor: pointer;}
-	      &lt;/style>
-	      &lt;/head>
-	      &lt;/style></pre>
-	    <Button id="button65" class="submit" onclick="showAnswer('question65', 'answer65')">Submit</button>
-	    <Button id="button_65" class="submit" onclick="checkAnswer('65', 'question65', 'answer65')">Show Answer</button>  
-	</div>
-	  <button id="backButton13" onclick="showOriginalContent('subtopic65', 'newContent13', 'nextButton13')">Back</button>
-	</div>
 
 
 
@@ -813,50 +738,6 @@ Your text content goes here.: This is the actual text or content of your paragra
 	        <button id="backButton15"  class="bckButton" onclick="showOriginalContent('subtopic71', 'newContent15', 'nextButton15')">Back</button>
 	</div>
 
-	<div id="newContent15" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question72" ansValue="height:100px"><span class="exercise">Exercise 2:</span> Set the height to 100px</p>
-	        <pre>&lt;iframs src="example.htm" style=<input type="text" id="answer72" name="attribute_info" size="12" maxlength="12">>&lt;/iframe></pre>
-	        <Button id="button72" class="submit" onclick="showAnswer('question72', 'answer72')">Submit</button>
-	        <Button id="button_72" class="submit" onclick="checkAnswer('72', 'question72', 'answer72')">Show Answer</button>  
-	    </div>
-	        <button id="backButton15" onclick="showOriginalContent('subtopic72', 'newContent15', 'nextButton15')">Back</button>
-	</div>
-
-	<div id="newContent15" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question73" ansValue="border:5px solid black;"><span class="exercise">Exercise 3:</span> Change the border set at 5px with a color of solid black</p>
-	        <pre>&lt;iframes src="example.htm" style=<input type="text" id="answer73" name="attribute_info" size="23" maxlength="23">> &lt;/iframe></pre>
-	        <Button id="button73" class="submit" onclick="showAnswer('question73', 'answer73')">Submit</button>
-	        <Button id="button_73" class="submit" onclick="checkAnswer('73', 'question73', 'answer73')">Show Answer</button>  
-	    </div>
-	        <button id="backButton15" onclick="showOriginalContent('subtopic73', 'newContent15', 'nextButton15')">Back</button>
-	</div>
-
-	<div id="newContent15" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question74" ansValue="iframe_2"><span class="exercise">Exercise 4:</span> Call for the 2nd iframe as a target frame.</p>
-	        <pre>&lt;iframe src="example.htm" name="iframe_1"> &lt;/iframe>
-	        &lt;iframe src="another.htm" name="iframe_2"> &lt;/iframe>
-	        &lt;p>&lt;a href="again.com" target=<input type="text" id="answer74" name="attribute_info" size="8" maxlength="8">>&lt;/a>&lt;/p></pre> 
-	
-	        <Button id="button74" class="submit" onclick="showAnswer('question74', 'answer74')">Submit</button>
-	        <Button id="button_74" class="submit" onclick="checkAnswer('74', 'question74', 'answer74')">Show Answer</button>  
-	    </div>
-	        <button id="backButton15" onclick="showOriginalContent('subtopic74', 'newContent15', 'nextButton15')">Back</button>
-	</div>
-
-	<div id="newContent15" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question75" ansValue="example_1"><span class="exercise">Exercise 5:</span>Name the Iframe as "example_1"</p>
-	        <pre>&lt;iframe src="example.htm" name=<input type="text" id="answer75" name="attribute_info" size="9" maxlength="9">>&lt;/iframe></pre>
-	        <Button id="button75" class="submit" onclick="showAnswer('question75', 'answer75')">Submit</button>
-	        <Button id="button_75" class="submit" onclick="checkAnswer('75', 'question75', 'answer75')">Show Answer</button>  
-	    </div>
-	        <button id="backButton15" onclick="showOriginalContent('subtopic75', 'newContent15', 'nextButton15')">Back</button>
-	</div>
-
-
 
         
         <!--SCRIPTS-->
@@ -882,6 +763,7 @@ Your text content goes here.: This is the actual text or content of your paragra
         </div>
         <div id="newContent16" class="sub-content" style="display: none;">
             <div class="subtopic-box">
+		<p class="centered-text" style="font-size: 25px;">Exercise 1</p><br>
                 <h2>Change the background color of the body elements to "blue".</h2><br>
                 <p id="question76" ansValue="blue">
                     &lt;body&gt;
@@ -955,6 +837,7 @@ Your text content goes here.: This is the actual text or content of your paragra
         </div>
         <div id="newContent18" class="sub-content" style="display: none;">
             <div class="subtopic-box">
+		<p class="centered-text" style="font-size: 25px;">Exercise 1</p><br>
                 <h3>In the form below, create a two checkbox button with the name "GCash" and "COD". Then, add submit button.</h3><br>
             <div> 
               <p>&lt;form&gt;</p>
@@ -1048,70 +931,6 @@ Your text content goes here.: This is the actual text or content of your paragra
           <Button id="attribute_sub_btn96" class="submit" onclick="checkAnswer('96','question96', 'answer96')">Submit Answer</Button>
 	    </div>
 	        <button id="backButton20"  class="bckButton" onclick="showOriginalContent('subtopic96', 'newContent20', 'nextButton20')">Back</button>
-	</div>
-	</div>
-
-	<div id="newContent20" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question97" ansValue="red"><span class="exercise">Exercise 2:</span> Fill in the value.</p>
-	        <pre>
-	            &lt;form action="/process" method="post">
-	                &lt;label for="color">Select your favorite color:&lt;/label>
-	                &lt;select id="color" name="color">
-	                    &lt;option value="<input type="text" id="answer97" name="attribute_info" size="3" maxlength="3">">Red&lt;/option>
-	                    &lt;option value="green">Green&lt;/option>
-	                    &lt;option value="blue">Blue&lt;/option>
-	                &lt;/select>
-	                &lt;br>
-	                &lt;input type="submit" value="Submit">
-	            &lt;/form>
-	        </pre>
-	        <input type="text" id="answer97" name="attribute_info" size="13" maxlength="13"></pre>
-	        <Button id="button97" class="submit" onclick="showAnswer('question97', 'answer97')">Submit</button>
-	        <Button id="button_97" class="submit" onclick="checkAnswer('question97', 'answer97')">Show Answer</button>  
-	    </div>
-	        <button id="backButton20" onclick="showOriginalContent('subtopic97', 'newContent20', 'nextButton20')">Back</button>
-	</div>
-
-	<div id="newContent20" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question98" ansValue="Feedback"><span class="exercise">Exercise 3:</span> Analyze and fill in the what is asked for.</p>
-	        <pre>
-	            &lt;form action="/submit" method="post">
-	                &lt;label for="feedback"><input type="text" id="answer98" name="attribute_info" size="8" maxlength="8">&lt;/label>
-	                &lt;textarea id="feedback" name="feedback" rows="5" cols="30">&lt;/textarea>
-	                &lt;br>
-	                &lt;input type="submit" value="Submit">
-	                &lt;/form>
-	        </pre>
-	        <Button id="button98" class="submit" onclick="showAnswer('question98', 'answer98')">Submit</button>
-	        <Button id="button_98" class="submit" onclick="checkAnswer('question98', 'answer98')">Show Answer</button>  
-	    </div>
-	        <button id="backButton20" onclick="showOriginalContent('subtopic98', 'newContent20', 'nextButton20')">Back</button>
-	</div>
-
-	<div id="newContent20" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question99" ansValue="12"><span class="exercise">Exercise 4:</span> How long should the row be to show the just the message.</p>
-	        <pre>
-	            &lt;textarea name="message" rows="<input type="text" id="answer99" name="attribute_info" size="12" maxlength="12">">
-	                Hello World!
-	                &lt;/textarea>
-	        </pre>
-	        <Button id="button99" class="submit" onclick="showAnswer('question99', 'answer99')">Submit</button>
-	        <Button id="button_99" class="submit" onclick="checkAnswer('question99', 'answer99')">Show Answer</button>  
-	    </div>
-	        <button id="backButton20" onclick="showOriginalContent('subtopic99', 'newContent20', 'nextButton20')">Back</button>
-	</div>
-
-	<div id="newContent20" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question100" ansValue="input"><span class="exercise">Exercise 4:</span> What element allows the user to put something, depending on the type attribute?</p>
-	        <input type="text" id="answer100" name="attribute_info" size="5" maxlength="5">">
-	        <Button id="button100" class="submit" onclick="showAnswer('question100', 'answer100')">Submit</button>
-	        <Button id="button_100" class="submit" onclick="checkAnswer('question100', 'answer100')">Show Answer</button>  
-	    </div>
-	        <button id="backButton20" onclick="showOriginalContent('subtopic100', 'newContent20', 'nextButton20')">Back</button>
 	</div>
 
 
@@ -1338,6 +1157,7 @@ I Love You
             <!--FORMATTING EXERCISES-->
             <div id="subtopic22" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 2</p><br>
                     <h2>Create more extra importance for the word "family" in the paragraph below.</h2><br>
                     <p id="question22" ansValue="<strong>">&lt;p>One of the biggest parts of our society is a good <input type="text" id="answer22" name="attribute_info"> family &lt;/strong> that gives us good communication and well-being.&lt;/p></p>
                     <Button id="attribute_show_btn22" class="submit" onclick="showAnswer('question22', 'answer22', 'attribute_show_btn22', 'attribute_sub_btn22')">Show Answer</Button>
@@ -1346,6 +1166,7 @@ I Love You
             </div>
             <div id="subtopic23" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 3</p><br>
                     <h2>Apply tags to the paragraph below to format the text as a paragraph.</h2><br>
                     <p id="question23" ansValue="</text>">&lt;p>&lt;text>HTML formatting is one of the useful parts of HTML coding <input type="text" id="answer23" name="attribute_info">&lt;/p></p>
                     <Button id="attribute_show_btn23" class="submit" onclick="showAnswer('question23', 'answer23', 'attribute_show_btn23', 'attribute_sub_btn23')">Show Answer</Button>
@@ -1354,6 +1175,7 @@ I Love You
             </div>
             <div id="subtopic24" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 4</p><br>
                     <h2>Highlight the " Premier" in the CNSC Vision..</h2><br>
                     <p id="question24" ansValue="<mark>">CNSC as a <input type="text" id="answer24" name="attribute_info">Premier&lt;/mark>Higher Education Institution in the Bicol Region.</p>
                     <Button id="attribute_show_btn24" class="submit" onclick="showAnswer('question24', 'answer24', 'attribute_show_btn24', 'attribute_sub_btn24')">Show Answer</Button>
@@ -1362,6 +1184,7 @@ I Love You
             </div>
             <div id="subtopic25" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 5</p><br>
                     <h2>Place the "lle" above other text.</h2><br>
                     <p id="question25" ansValue="</sup>">Robert a présenté son rapport à M&lt;sup>lle<input type="text" id="answer25" name="attribute_info"> Bernard.</p>
                     <Button id="attribute_show_btn25" class="submit" onclick="showAnswer('question25', 'answer25', 'attribute_show_btn25', 'attribute_sub_btn25')">Show Answer</Button>
@@ -1502,7 +1325,7 @@ h1 {
             <!--LINKS EXERCISES-->
             <div id="subtopic42" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 2</p><br>
                     <h3>Create a program that displaying the links of different social media accounts of CNSC by filling in the blank space provided below. The links should be "https://www.cnsc.edu.ph/cnsc-website/" for CNSC Website, "https://www.facebook.com/CNSCOfficial/" for CNSC’s Facebook, and "https://twitter.com/cnscop" for CNSC’s Twitter.</h3>
               <div> 
                 <p>&lt;h2&gt;&nbsp;Contact Information&lt;h2&gt;</p>
@@ -1516,7 +1339,7 @@ h1 {
             </div>
             <div id="subtopic43" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 3</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 3</p><br>
                     <h3>Use the correct HTML in order to make the image as a link to the trailer of the series. The link should be "https://youtu.be/M-PHcxPyasA".</h3><br>
               <div> 
                 <p>&lt;h2&gt;&nbsp;Image as a Link&lt;h2&gt;</p>
@@ -1529,7 +1352,7 @@ h1 {
             </div>
             <div id="subtopic44" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 4</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 4</p><br>
                     <h2>Create a bookmark using an id to jump to section 6. The id should be 'S6'.</h2><br>
               <div> 
                 <p>&lt;h2&gt;&nbsp;Section 1&lt;/h2&gt;</p>
@@ -1554,7 +1377,7 @@ h1 {
             </div>
             <div id="subtopic45" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 5</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 5</p><br>
                     <h3>Use the correct HTML to create a button as a link to go to Youtube. The link should be "https://www.youtube.com/".</h3><br>
               <div> 
                 <p>&lt;p&gt;&nbsp;Click the button to go to Youtube&lt;/p&gt;</p>
@@ -1628,7 +1451,7 @@ h1 {
             <!--TABLES EXERCISES-->
             <div id="subtopic52" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 2</p><br>
                     <h3>Create a student record table by filling in the blanks space below. Add three headings and it should have the value “First Name”, “Last Name”, and “Age”.</h3><br>
             <div>  
               <p>&lt;h2&gt;&nbsp;Student Record Table&lt;h2&gt;</p>
@@ -1651,7 +1474,7 @@ h1 {
             </div>
             <div id="subtopic53" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 3</p>
+                   <p class="centered-text" style="font-size: 25px;">Exercise 3</p><br>
                     <h3>Use CSS to add a border and collapse it into the table. The border should be 1 pixel solid black.</h3>
             <div>
               <p>&lt;style&gt;</p>
@@ -1667,7 +1490,7 @@ h1 {
             </div>
             <div id="subtopic54" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 4</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 4</p><br>
                     <h2>Use CSS to add padding in the table with 15 pixels at the top and 25 pixels at the bottom of the table.</h2><br>
             <div> 
               <p>&lt;style&gt;</p>
@@ -1687,7 +1510,7 @@ h1 {
             </div>
             <div id="subtopic55" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 5</p>
+                   <p class="centered-text" style="font-size: 25px;">Exercise 5</p><br>
                     <h3>Use the correct HTML attribute to style the three first columns of the table. The background-color should be green.</h3><br>
             <div> 
               <p>&lt;table style="width:100%"&gt;</p>
@@ -1753,26 +1576,74 @@ h1 {
             <!--CLASSES EXERCISES-->
             <div id="subtopic62" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 2</p>
-                    <p>Additional text goes here, not centered.</p>
+                  <p id="question62" ansValue="class name"><span class="exercise">Exercise 2:</span>The syntax for Class is a period(.) followed by:</p>
+                  <input type="text" id="answer62" name="attribute_info" size="10" maxlength="10">
+                  <Button id="attribute_show_btn62" class="submit" onclick="showAnswer('question62', 'answer62', 'attribute_show_btn62', 'attribute_sub_btn62')">Show Answer</Button>
+                  <button id="attribute_sub_btn62" class="submit" onclick="checkAnswer('62', 'question62', 'answer62')">Submit Answer</button>
+                  <p id="feedback2" class="feedback"></p>
                 </div>
             </div>
             <div id="subtopic63" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 3</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <p id="question63" ansValue="city"><span class="exercise">Exercise 3:</span> Fill in the missing parts with the class in the style
+                  </p>
+                  <pre>
+                    &lt;style>
+                    .city {
+                    font-family: 'Courier New', monospace;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    resize: horizontal;}
+                    &lt;/style>
+                    &lt;/head>
+                    &lt;body>
+                    &lt;h1 class=<input type="text" id="answer63" name="attribute_info" size="4" maxlength="4">> This is h1 with class. &lt;/h1>
+                  </pre>
+                  <Button id="attribute_show_btn63" class="submit" onclick="showAnswer('question63', 'answer63', 'attribute_show_btn63', 'attribute_sub_btn63')">Show Answer</Button>
+                  <button id="attribute_sub_btn63" class="submit" onclick="checkAnswer('63', 'question63', 'answer63')">Submit Answer</button>
                 </div>
             </div>
             <div id="subtopic64" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 4</p>
-                    <p>Additional text goes here, not centered.</p>
+                   <p id="question64" ansValue="City"><span>Exercise 4:</span> Use the upper case class on the second h1</p>
+                  <pre>
+                    &lt;style>
+                    .city {
+                      font-family: 'Courier New', monospace;
+                      padding: 5px;
+                      border: 1px solid #ccc;
+                      resize: horizontal;}
+                    .City {
+                      background-color: black;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;}
+                    &lt;/style>
+                    &lt;/head>
+                    &lt;body>
+                    &lt;h1 class="city"> This is the first h1.&lt;/h1>
+                    &lt;h1 class=<input type="text" id="answer64" name="attribute_info" size="4" maxlength="4">> This is the second h1.&lt;/h1></pre>
+                  <Button id="attribute_show_btn64" class="submit" onclick="showAnswer('question64', 'answer64', 'attribute_show_btn64', 'attribute_sub_btn64')">Show Answer</Button>
+                  <button id="attribute_sub_btn64" class="submit" onclick="checkAnswer('64', 'question64', 'answer64')">Submit Answer</button>
                 </div>
             </div>
             <div id="subtopic65" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 5</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <p id="question65" ansValue="background-color: black"><span class="exercise">Exercise 5:</span>Set the background color to black in class "city":</p>
+                  <pre>
+                    &lt;style> 
+                    .City {
+                    <input type="text" id="answer65" name="attribute_info" size="23" maxlength="23">;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;}
+                    &lt;/style>
+                    &lt;/head>
+                    &lt;/style></pre>
+                  <Button id="attribute_show_btn65" class="submit" onclick="showAnswer('question65', 'answer65', 'attribute_show_btn65', 'attribute_sub_btn65')">Show Answer</Button>
+                  <button id="attribute_sub_btn65" class="submit" onclick="checkAnswer('65', 'question65', 'answer65')">Submit Answer</button> 
                 </div>
             </div>
 
@@ -1833,32 +1704,43 @@ h1 {
             <!--IFRAMES EXERCISES-->
             <div id="subtopic72" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 2</p>
-                    <p>Additional text goes here, not centered.</p>
+                  <p id="question72" ansValue="height:100px"><span class="exercise">Exercise 2:</span> Set the height to 100px</p>
+                  <pre>&lt;iframs src="example.htm" style=<input type="text" id="answer72" name="attribute_info" size="12" maxlength="12">>&lt;/iframe></pre>
+                  <Button id="attribute_show_btn72" class="submit" onclick="showAnswer('question72', 'answer72', 'attribute_show_btn72', 'attribute_sub_btn72')">Show Answer</button>
+                  <Button id="attribute_sub_btn72" class="submit" onclick="checkAnswer('72','question72', 'answer72')">Submit Answer</button> 
                 </div>
             </div>
             <div id="subtopic73" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 3</p>
-                    <p>Additional text goes here, not centered.</p>
+                    <p id="question73" ansValue="border:5px solid black;"><span class="exercise">Exercise 3:</span> Change the border set at 5px with a color of solid black</p>
+                  <pre>&lt;iframes src="example.htm" style=<input type="text" id="answer73" name="attribute_info" size="23" maxlength="23">> &lt;/iframe></pre>
+                  <Button id="attribute_show_btn73" class="submit" onclick="showAnswer('question73', 'answer73', 'attribute_show_btn73', 'attribute_sub_btn73')">Show Answer</button>
+                  <Button id="attribute_sub_btn73" class="submit" onclick="checkAnswer('73','question73', 'answer73')">Submit Answer</button> 
                 </div>
             </div>
             <div id="subtopic74" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 4</p>
-                    <p>Additional text goes here, not centered.</p>
+                 <p id="question74" ansValue="iframe_2"><span class="exercise">Exercise 4:</span> Call for the 2nd iframe as a target frame.</p>
+                  <pre>&lt;iframe src="example.htm" name="iframe_1"> &lt;/iframe>
+                  &lt;iframe src="another.htm" name="iframe_2"> &lt;/iframe>
+                  &lt;p>&lt;a href="again.com" target=<input type="text" id="answer74" name="attribute_info" size="8" maxlength="8">>&lt;/a>&lt;/p></pre> 
+                  <Button id="attribute_show_btn74" class="submit" onclick="showAnswer('question74', 'answer74', 'attribute_show_btn74', 'attribute_sub_btn74')">Show Answer</button>
+                  <Button id="attribute_sub_btn74" class="submit" onclick="checkAnswer('74','question74', 'answer74')">Submit Answer</button> 
                 </div>
             </div>
             <div id="subtopic75" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 5</p>
-                    <p>Additional text goes here, not centered.</p>
+                   <p id="question75" ansValue="example_1"><span class="exercise">Exercise 5:</span>Name the Iframe as "example_1"</p>
+                  <pre>&lt;iframe src="example.htm" name=<input type="text" id="answer75" name="attribute_info" size="9" maxlength="9">>&lt;/iframe></pre>
+                  <Button id="attribute_show_btn75" class="submit" onclick="showAnswer('question75', 'answer75', 'attribute_show_btn75', 'attribute_sub_btn75')">Show Answer</button>
+                  <Button id="attribute_sub_btn75" class="submit" onclick="checkAnswer('75','question75', 'answer75')">Submit Answer</button> 
                 </div>
             </div>
 
             <!--SCRIPTS EXERCISES-->
             <div id="subtopic77" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 2</p><br>
                     <h2>Change the text color of the h1 element to "red"</h2><br>
                     <p id="question77" ansValue="red">
                         &lt;body&gt;
@@ -1875,6 +1757,7 @@ h1 {
             </div>
             <div id="subtopic78" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 3</p><br>
                     <h2>Hide the img element with the id "myImage".</h2><br>
                     <p id="question78" ansValue="none">
                         &lt;body&gt;
@@ -1891,6 +1774,7 @@ h1 {
             </div>
             <div id="subtopic79" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 4</p><br>
                     <h2>Set the border of all div elements to "2px solid green".</h2><br>
                     <p id="question79" ansValue="2px solid green">
                         &lt;body&gt;
@@ -1911,6 +1795,7 @@ h1 {
             </div>
             <div id="subtopic80" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 5</p><br>
                     <h2>Change the font family of all p elements to "Arial".</h2><br>
                     <p id="question80" ansValue="Arial">
                         &lt;body&gt;
@@ -2012,7 +1897,7 @@ h1 {
             <!--FORMS EXERCISES-->
             <div id="subtopic87" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
+	            <p class="centered-text" style="font-size: 25px;">Exercise 2</p><br>
                     <h3>In the form below, create a student registration form by filling in the blank space below.</h3><br>
             <div>  
               <p>&lt;h2&gt;&nbsp;Student Registration Form&lt;h2&gt;</p>
@@ -2034,7 +1919,7 @@ h1 {
             </div>
             <div id="subtopic88" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 3</p>
+		    <p class="centered-text" style="font-size: 25px;">Exercise 3</p><br>
                     <h3>In the form below, create a gmail-like form to send a new message by filling in the blank space below.</h3><br>
             <div>
               <p>&lt;h2&gt;&nbsp;New Message&lt;h2&gt;</p>
@@ -2055,7 +1940,7 @@ h1 {
             </div>
             <div id="subtopic89" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 4</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 4</p><br>
                     <h3>In the form below, create an edit user profile form by filling in the blank space provided below.</h3><br>
             <div> 
               <p>&lt;h2&gt;&nbsp;Edit User Profile&lt;h2&gt;</p>
@@ -2081,7 +1966,7 @@ h1 {
             </div>
             <div id="subtopic90" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Exercise 5</p>
+                    <p class="centered-text" style="font-size: 25px;">Exercise 5</p><br>
                     <h3>In the form below, create a selection using a checkbox with the following words: pizza, coke, pasta, and burger. Then, the value of the submit button must be 'Proceed'</h3><br>
             <div> 
               <p>&lt;form&gt;</p>
@@ -2138,26 +2023,57 @@ h1 {
             <!--FORM ELEMENTS EXERCISES-->
             <div id="subtopic97" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 2</p>
-                    <p>Additional text goes here, not centered.</p>
+                   <p id="question97" ansValue="red"><span class="exercise">Exercise 2:</span> Fill in the value.</p>
+                  <pre>
+                      &lt;form action="/process" method="post">
+                          &lt;label for="color">Select your favorite color:&lt;/label>
+                          &lt;select id="color" name="color">
+                              &lt;option value="<input type="text" id="answer97" name="attribute_info" size="3" maxlength="3">">Red&lt;/option>
+                              &lt;option value="green">Green&lt;/option>
+                              &lt;option value="blue">Blue&lt;/option>
+                          &lt;/select>
+                          &lt;br>
+                          &lt;input type="submit" value="Submit">
+                      &lt;/form>
+                  </pre>
+                  <input type="text" id="answer97" name="attribute_info" size="13" maxlength="13"></pre>
+                  <Button id="attribute_show_btn97" class="submit" onclick="showAnswer('question97', 'answer97', 'attribute_show_btn97', 'attribute_sub_btn97')">Show Answer</Button>
+                  <button id="attribute_sub_btn97" class="submit" onclick="checkAnswer('97', 'question97', 'answer97')">Submit Answer</button>
                 </div>
             </div>
             <div id="subtopic98" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 3</p>
-                    <p>Additional text goes here, not centered.</p>
+                   <p id="question98" ansValue="Feedback"><span class="exercise">Exercise 3:</span> Analyze and fill in the what is asked for.</p>
+                  <pre>
+                      &lt;form action="/submit" method="post">
+                      &lt;label for="feedback"><input type="text" id="answer98" name="attribute_info" size="8" maxlength="8">&lt;/label>
+                      &lt;textarea id="feedback" name="feedback" rows="5" cols="30">&lt;/textarea>
+                      &lt;br>
+                      &lt;input type="submit" value="Submit">
+                      &lt;/form>
+                  </pre>
+                  <Button id="attribute_show_btn98" class="submit" onclick="showAnswer('question98', 'answer98', 'attribute_show_btn98', 'attribute_sub_btn98')">Show Answer</Button>
+                  <button id="attribute_sub_btn98" class="submit" onclick="checkAnswer('98', 'question98', 'answer98')">Submit Answer</button>
                 </div>
             </div>
             <div id="subtopic99" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 4</p>
-                    <p>Additional text goes here, not centered.</p>
+                  <p id="question99" ansValue="12"><span class="exercise">Exercise 4:</span> How long should the row be to show the just the message.</p>
+                  <pre>
+                      &lt;textarea name="message" rows="<input type="text" id="answer99" name="attribute_info" size="12" maxlength="12">">
+                          Hello World!
+                          &lt;/textarea>
+                  </pre>
+                  <Button id="attribute_show_btn99" class="submit" onclick="showAnswer('question99', 'answer99', 'attribute_show_btn99', 'attribute_sub_btn99')">Show Answer</Button>
+                  <button id="attribute_sub_btn99" class="submit" onclick="checkAnswer('99', 'question99', 'answer99')">Submit Answer</button>
                 </div>
             </div>
             <div id="subtopic100" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
-                    <p class="centered-text">Contents sa Topic 5</p>
-                    <p>Additional text goes here, not centered.</p>
+                  <p id="question100" ansValue="input"><span class="exercise">Exercise 5:</span> What element allows the user to put something, depending on the type attribute?</p>
+                  <input type="text" id="answer100" name="attribute_info" size="5" maxlength="5">">
+                  <Button id="attribute_show_btn100" class="submit" onclick="showAnswer('question100', 'answer100', 'attribute_show_btn100', 'attribute_sub_btn100')">Show Answer</Button>
+                  <button id="attribute_sub_btn100" class="submit" onclick="checkAnswer('100', 'question100', 'answer100')">Submit Answer</button>
                 </div>
             </div>
 
@@ -2190,6 +2106,7 @@ h1 {
             <!--INPUT ATTRIBUTES EXERCISES-->
             <div id="subtopic107" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		     <p class="centered-text" style="font-size: 25px;">Exercise 2</p><br>
                      <h2>The missing attribute to set a maximum character limit of 50 for the input field is:</h2><br>
                     <p id="question107" ansValue="maxlength=50">&lt;p> label for="bio">Bio: /label input type="text" id="bio"<input type="text" id="answer107" name="attribute_info">&lt;/p></pre>
                     <Button id="attribute_show_btn107" class="submit" onclick="showAnswer('question107', 'answer107', 'attribute_show_btn107', 'attribute_sub_btn107')">Show Answer</Button>
@@ -2198,6 +2115,7 @@ h1 {
             </div>
             <div id="subtopic108" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 3</p><br>
                     <h2>The missing attribute to make the input field required is:</h2><br>
                     <p id="question108" ansValue="required">&lt;p> label for="email">Email: /label input type="email" id="email"<input type="text"  id="answer108" name="attribute_info">&lt;/p></p>
                     <Button id="attribute_show_btn108" class="submit" onclick="showAnswer('question108', 'answer108', 'attribute_show_btn108', 'attribute_sub_btn108')">Show Answer</Button>
@@ -2206,6 +2124,7 @@ h1 {
             </div>
             <div id="subtopic109" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 4</p><br>
                     <h2>The missing attribute to specify a default value of "Lovely Joyce" for the input field is:</h2><br>
                     <p id="question109" ansValue="value=Lovely Joyce">&lt;p>label for="name">Name:/label input type="text" id="name"<input type="text" id="answer109" name="attribute_info">&lt;/p></p>
                     <Button id="attribute_show_btn109" class="submit" onclick="showAnswer('question109', 'answer109', 'attribute_show_btn109', 'attribute_sub_btn109')">Show Answer</Button>
@@ -2214,6 +2133,7 @@ h1 {
             </div>
             <div id="subtopic110" class="sub-content" style="display: none;">
                 <div class="subtopic-box">
+		    <p class="centered-text" style="font-size: 25px;">Exercise 5</p><br>
                     <h2>The missing attribute to disable the input field is:</h2><br>
                     <p id="question110" ansValue="disabled">&lt;p>label for="phone">Phone:/label input type="text" id="phone"<input type="text" id="answer110" name="attribute_info">&lt;/p></p>
                     <Button id="attribute_show_btn110" class="submit" onclick="showAnswer('question110', 'answer110', 'attribute_show_btn110', 'attribute_sub_btn110')">Show Answer</Button>
