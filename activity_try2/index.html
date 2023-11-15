@@ -641,16 +641,17 @@ CSS (Cascading Style Sheets):
         <div id="subtopic46" class="sub-content" style="display: none;">
             <div class="subtopic-box">
                 <p class="centered-text">HTML Image</p>
-                <p>
-                  In order to put a simple image on a web page, we use the < img > element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt.
+                <ul>
+                <p> <li>In order to put a simple image on a web page, we use the &lt;img> element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt.</li></p>
                   
-                  The src attribute contains a URL pointing to the image you want to embed in the page. As with the href attribute for < a > elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.
+                 <p><li> The src attribute contains a URL pointing to the image you want to embed in the page. As with the href attribute for &lt;a> elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.</li></p>
                   
-                  The next attribute we'll look at is alt. Its value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection.
+                 <p><li>The next attribute we'll look at is alt. Its value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection.</li></p>
                   
-                  You can use the width and height attributes to specify the width and height of your image. They are given as integers without a unit, and represent the image's width and height in pixels.
+                 <p><li>You can use the width and height attributes to specify the width and height of your image. They are given as integers without a unit, and represent the image's width and height in pixels.</li></p>
                   
-                  The < a> element in HTML is used to create links. When you wrap an img element in an a element, you create a link to the image. This means that when a user clicks on the image, they will be taken to the URL specified in the href attribute of the a element.</p>
+                <p><li>The &lt;a> element in HTML is used to create links. When you wrap an img element in an a element, you create a link to the image. This means that when a user clicks on the image, they will be taken to the URL specified in the href attribute of the a element.</li></p>
+              </ul>
             </div>
             <button id="nextButton46" class="nxtButton" onclick="showNewContent('subtopic46', 'newContent46')">Next</button>
         </div>
@@ -666,86 +667,7 @@ CSS (Cascading Style Sheets):
             <button id="backButton46" class="bckButton" onclick="showOriginalContent('subtopic46', 'newContent46', 'nextButton46')">Back</button>
         </div>
 
-        <!--exercise 2-->
-        <div id="subtopic47" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">src attribute</p>
-                <p>The src attribute contains a URL pointing to the image you want to embed in the page. As with the href attribute for < a > elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.</p>
-            </div>
-            <button id="nextButton47" class="nxtButton" onclick="showNewContent('subtopic47', 'newContent47')">Next</button>
-        </div>
-        <div id="newContent47" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <h2>Use the correct attribute to display an image on a web-page</h2>
-              <div> 
-                <p id="question47" ansValue='src'>&lt;img  <input type="text" id="answer47" name="attribute_info"> ="image.png" alt="Image of a cat">   </p> 
-              </div>
-              <Button id="attribute_show_btn47" class="submit" onclick="showAnswer('question47', 'answer47', 'attribute_show_btn47', 'attribute_sub_btn47')">Show Answer</Button>
-              <Button id="attribute_sub_btn47" class="submit" onclick="checkAnswer('47', 'question47', 'answer47')">Submit Answer</Button>
-            </div>
-            <button id="backButton47" class="bckButton" onclick="showOriginalContent('subtopic47', 'newContent47', 'nextButton47')">Back</button>
-        </div>
-
-        <!---exercise 3-->
-        <div id="subtopic48" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text"> alt attribute </p>
-                <p>The next attribute we'll look at is alt. Its value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection.</p>
-            </div>
-            <button id="nextButton48" class="nxtButton" onclick="showNewContent('subtopic48', 'newContent48')">Next</button>
-        </div>
-        <div id="newContent48" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <h2>Use the correct attribute to display an image on a web-page</h2>
-              <div> 
-                <p id="question48" ansValue='alt'>&lt;img src ="image.png"  <input type="text" id="answer48" name="attribute_info"> ="Image of a cat">   </p> 
-              </div>
-              <Button id="attribute_show_btn48" class="submit" onclick="showAnswer('question48', 'answer48', 'attribute_show_btn48', 'attribute_sub_btn48')">Show Answer</Button>
-              <Button id="attribute_sub_btn48" class="submit" onclick="checkAnswer('48', 'question48', 'answer48')">Submit Answer</Button>
-            </div>
-            <button id="backButton48" class="bckButton" onclick="showOriginalContent('subtopic48', 'newContent48', 'nextButton48')">Back</button>
-        </div>
-    
-      
-        <!---exercise 4-->
-        <div id="subtopic49" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Width and Height attribute</p>
-                <p>You can use the width and height attributes to specify the width and height of your image. They are given as integers without a unit, and represent the image's width and height in pixels.</p>
-            </div>
-            <button id="nextButton49" class="nxtButton" onclick="showNewContent('subtopic49', 'newContent49')">Next</button>
-        </div>
-        <div id="newContent49" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <h2>Use the correct attribute to resize an image on web-page to 200 pixel width.</h2>
-              <div> 
-                <p id="question49" ansValue='width'>&lt;img src="image.png" alt="Image of a cat" <input type="text" id="answer49" name="attribute_info">="200" height ="100">  </p> 
-              </div>
-              <Button id="attribute_show_btn49" class="submit" onclick="showAnswer('question49', 'answer49', 'attribute_show_btn49', 'attribute_sub_btn49')">Show Answer</Button>
-              <Button id="attribute_sub_btn49" class="submit" onclick="checkAnswer('49', 'question49', 'answer49')">Submit Answer</Button>
-            </div>
-            <button id="backButton49" class="bckButton" onclick="showOriginalContent('subtopic49', 'newContent49', 'nextButton49')">Back</button>
-        </div>
-
-        <!---exercise 5-->
-        <div id="subtopic50" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Links image </p>
-                <p>The a element in HTML is used to create links. When you wrap an img element in an a element, you create a link to the image. This means that when a user clicks on the image, they will be taken to the URL specified in the href attribute of the a element..</p>
-            </div>
-            <button id="nextButton50" class="nxtButton" onclick="showNewContent('subtopic50', 'newContent50')">Next</button>
-        </div>
-        <div id="newContent50" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <h2>Use the correct attribute to resize an image on web-page to 200 pixel width.</h2>
-              <div> 
-                <p id="question50" ansValue='a href'>&lt;<input type="text" id="answer50" name="attribute_info">="image.png">&lt;img src="image.png" alt="Image of a cat">&lt;/a>  </p> 
-              </div>
-              <Button id="attribute_show_btn50" class="submit" onclick="showAnswer('question50', 'answer50', 'attribute_show_btn50', 'attribute_sub_btn50')">Show Answer</Button>
-              <Button id="attribute_sub_btn50" class="submit" onclick="checkAnswer('50', 'question50', 'answer50')">Submit Answer</Button>
-            </div>
-            <button id="backButton50"  class="bckButton" onclick="showOriginalContent('subtopic50', 'newContent50', 'nextButton50')">Back</button>
-        </div>
+       
 
         <!--TABLES-->
         <div id="subtopic51" class="sub-content" style="display: none;">
@@ -1085,17 +1007,15 @@ Your text content goes here.: This is the actual text or content of your paragra
         <div id="subtopic81" class="sub-content" style="display: none;">
             <div class="subtopic-box">
                 <p class="centered-text">HTML Computercode </p>
-                <p>Computercode
-
-                  The < code > tag in HTML is used to define the piece of computer code. During the creation of web pages sometimes there is a need to display computer programming code. It could be done by any basic heading tag of HTML but HTML provides a separate tag which is < code > tag. HTML provides many methods for text-formatting but < code > tag is displayed with fixed letter size, font, and spacing.
+                <p><li>The &lt;code> tag in HTML is used to define the piece of computer code. During the creation of web pages sometimes there is a need to display computer programming code. It could be done by any basic heading tag of HTML but HTML provides a separate tag which is &lt;code> tag. HTML provides many methods for text-formatting but &lt;code> tag is displayed with fixed letter size, font, and spacing.</li></p>
                   
-                  To display multiple lines of code on a web page, you can wrap the code in a < pre > element. The < pre > element will preserve the formatting of the code, including any line breaks.
+                <p><li>To display multiple lines of code on a web page, you can wrap the code in a &lt;pre> element. The &lt;pre> element will preserve the formatting of the code, including any line breaks.</li></p>
                   
-                  To create a code block with a title, you can use the < details> and < summary> elements. The < details> element allows you to create a collapsible section of content, and the < summary> element provides a title for the collapsible section.
+                <p><li>To create a code block with a title, you can use the &lt;details> and &lt;summary> elements. The &lt;details> element allows you to create a collapsible section of content, and the &lt;summary> element provides a title for the collapsible section.</li></p>
                   
-                  To highlight specific keywords in the code, you can use the < span> element. The &lt;span> element allows you to apply CSS styles to a specific section of text. 
+                 <p><li>To highlight specific keywords in the code, you can use the &lt;span> element. The &lt;span> element allows you to apply CSS styles to a specific section of text.</li></p>
                   
-                  The HTML < kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p>
+                <p><li>The HTML ^&lt;kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</li></p>
             </div>
             <button id="nextButton81" class="nxtButton" onclick="showNewContent('subtopic81', 'newContent81')">Next</button>
         </div>
@@ -1111,105 +1031,7 @@ Your text content goes here.: This is the actual text or content of your paragra
             <button id="backButton81" class="bckButton" onclick="showOriginalContent('subtopic81', 'newContent81', 'nextButton81')">Back</button>
         </div>
 
-        <!----EXERCISE 2-->
-        <div id="subtopic82" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">HTML &lt;pre> </p>
-                <p>  To display multiple lines of code on a web page, you can wrap the code in a < pre > element. The < pre > element will preserve the formatting of the code, including any line breaks.</p>
-            </div>
-            <button id="nextButton81" onclick="showNewContent('subtopic82', 'newContent82')">Next</button>
-        </div>
-        <div id="newContent82" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <h2>Use the correct HTML attribute to display multiple lines of code on a web page.</h2>
-              <div> 
-                <p id="question82" ansValue='&lt;pre>'>  <input type="text" id="answer82" name="attribute_info"></p>
-                   <p> function add(a, b) { </p>
-                    <p>  return a + b; </p>
-                   <p> } </p>
-                   <p> &lt;/pre>   </p> 
-              </div>
-              <Button id="attribute_show_btn82" class="submit" onclick="showAnswer('question82', 'answer82', 'attribute_show_btn82', 'attribute_sub_btn82')">Show Answer</Button>
-              <Button id="attribute_sub_btn82" class="submit" onclick="checkAnswer('82', 'question82', 'answer82')">Submit Answer</Button>
-            </div>
-            <button id="backButton82" class="bckButton" onclick="showOriginalContent('subtopic82', 'newContent82', 'nextButton82')">Back</button>
-        </div>
-
-
-        <!--EXERCISE 3-->
-        <div id="subtopic83" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">HTML code block with a title </p>
-                <p> To create a code block with a title, you can use the &lt;details> and &lt;summary> elements. The &lt;details> element allows you to create a collapsible section of content, and the &lt;summary> element provides a title for the collapsible section.</p>
-            </div>
-            <button id="nextButton83" onclick="showNewContent('subtopic83', 'newContent83')">Next</button>
-        </div>
-        <div id="newContent83" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <h2>Use the correct HTML element to create a code of block with a title. </h2>
-              <div> 
-                <p id="question83" ansValue='&lt;details>'> <input type="text" id="answer83" name="attribute_info"> </p>
-                    <p> &lt;summary>JavaScript function &lt;/summary> </p>
-                    <p>&lt;pre> </p>  
-                  <p>function add (a,b) { </p>  
-                    <p>return a + b;</p> 
-                    <p> } </p> 
-                   <p>&lt;/pre></p> 
-                   <p>&lt;/details> </p>
-              </div>
-              <Button id="attribute_show_btn83" class="submit" onclick="showAnswer('question83', 'answer83', 'attribute_show_btn83', 'attribute_sub_btn83')">Show Answer</Button>
-              <Button id="attribute_sub_btn83" class="submit" onclick="checkAnswer('83', 'question83', 'answer83')">Submit Answer</Button>
-            </div>
-            <button id="backButton83" class="bckButton" onclick="showOriginalContent('subtopic83', 'newContent83', 'nextButton83')">Back</button>
-        </div>
-
-
-            <!---EXERCISE 4-->
-            <div id="subtopic84" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">HTML &lt;span></p>
-                    <p>  To highlight specific keywords in the code, you can use the &lt;span> element. The &lt;span> element allows you to apply CSS styles to a specific section of text. </p>
-                </div>
-                <button id="nextButton84" onclick="showNewContent('subtopic84', 'newContent84')">Next</button>
-            </div>
-            <div id="newContent84" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <h2>Use the correct HTML element to create a code block with title </h2>
-                  <div> 
-                    <p id="question84" ansValue='&lt;span '> &lt;pre> </p>
-                        <p><input type="text" id="answer84" name="attribute_info">style ="color: red;">function</span> add(a, b) {</p>
-                        <p>return a + b; </p>  
-                      <p>}</p>  
-                       <p>&lt;/pre></p> 
-                  </div>
-                  <Button id="attribute_show_btn84" class="submit" onclick="showAnswer('question84', 'answer84', 'attribute_show_btn84', 'attribute_sub_btn84')">Show Answer</Button>
-                  <Button id="attribute_sub_btn84" class="submit" onclick="checkAnswer('84', 'question84', 'answer84')">Submit Answer</Button>
-                </div>
-                <button id="backButton84" class="bckButton" onclick="showOriginalContent('subtopic84', 'newContent84', 'nextButton84')">Back</button>
-            </div>
-
-
-                 <!---EXERCISE 5-->
-                 <div id="subtopic85" class="sub-content" style="display: none;">
-                    <div class="subtopic-box">
-                        <p class="centered-text">HTML &lt;kbd></p>
-                        <p>  The HTML &lt;kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p>
-                    </div>
-                    <button id="nextButton85" onclick="showNewContent('subtopic85', 'newContent85')">Next</button>
-                </div>
-                <div id="newContent85" class="sub-content" style="display: none;">
-                    <div class="subtopic-box">
-                        <h2>Use the correct HTML element to create a code block with title </h2>
-                      <div> 
-                        <p id="question85" ansValue='&lt;kbd> '> </p>
-                            <p>  &lt;p> Save the document by pressing <input type="text" id="answer85" name="attribute_info">Ctrl + S &lt;/kbd> &lt;/p> </p>
-                          
-                      </div>
-                      <Button id="attribute_show_btn85" class="submit" onclick="showAnswer('question85', 'answer85', 'attribute_show_btn85', 'attribute_sub_btn85')">Show Answer</Button>
-                      <Button id="attribute_sub_btn85" class="submit" onclick="checkAnswer('85', 'question85', 'answer85')">Submit Answer</Button>
-                    </div>
-                    <button id="backButton85" class="bckButton" onclick="showOriginalContent('subtopic85', 'newContent85', 'nextButton85')">Back</button>
-                </div>
+        
         <!--FORMS-->
         <div id="subtopic86" class="sub-content" style="display: none;">
             <div class="subtopic-box">
@@ -1839,6 +1661,64 @@ h1 {
                 </div>
             </div>
 
+
+            <!----IMAGES EXERCISES-->
+             <!--exercise 2-->
+        <div id="subtopic47" class="sub-content" style="display: none;">
+            <div class="subtopic-box">
+                <h2>Use the correct attribute to display an image on a web-page</h2>
+              <div> 
+                <p id="question47" ansValue='src'>&lt;img  <input type="text" id="answer47" name="attribute_info"> ="image.png" alt="Image of a cat">   </p> 
+              </div>
+              <Button id="attribute_show_btn47" class="submit" onclick="showAnswer('question47', 'answer47', 'attribute_show_btn47', 'attribute_sub_btn47')">Show Answer</Button>
+              <Button id="attribute_sub_btn47" class="submit" onclick="checkAnswer('47', 'question47', 'answer47')">Submit Answer</Button>
+            </div>
+            <button id="backButton47" class="bckButton" onclick="showOriginalContent('subtopic47', 'newContent47', 'nextButton47')">Back</button>
+        </div>
+
+        <!---exercise 3-->
+        <div id="subtopic48" class="sub-content" style="display: none;">
+            
+            <div class="subtopic-box">
+                <h2>Use the correct attribute to display an image on a web-page</h2>
+              <div> 
+                <p id="question48" ansValue='alt'>&lt;img src ="image.png"  <input type="text" id="answer48" name="attribute_info"> ="Image of a cat">   </p> 
+              </div>
+              <Button id="attribute_show_btn48" class="submit" onclick="showAnswer('question48', 'answer48', 'attribute_show_btn48', 'attribute_sub_btn48')">Show Answer</Button>
+              <Button id="attribute_sub_btn48" class="submit" onclick="checkAnswer('48', 'question48', 'answer48')">Submit Answer</Button>
+            </div>
+            <button id="backButton48" class="bckButton" onclick="showOriginalContent('subtopic48', 'newContent48', 'nextButton48')">Back</button>
+        </div>
+    
+      
+        <!---exercise 4-->
+        <div id="subtopic49" class="sub-content" style="display: none;">
+            
+            <div class="subtopic-box">
+                <h2>Use the correct attribute to resize an image on web-page to 200 pixel width.</h2>
+              <div> 
+                <p id="question49" ansValue='width'>&lt;img src="image.png" alt="Image of a cat" <input type="text" id="answer49" name="attribute_info">="200" height ="100">  </p> 
+              </div>
+              <Button id="attribute_show_btn49" class="submit" onclick="showAnswer('question49', 'answer49', 'attribute_show_btn49', 'attribute_sub_btn49')">Show Answer</Button>
+              <Button id="attribute_sub_btn49" class="submit" onclick="checkAnswer('49', 'question49', 'answer49')">Submit Answer</Button>
+            </div>
+            <button id="backButton49" class="bckButton" onclick="showOriginalContent('subtopic49', 'newContent49', 'nextButton49')">Back</button>
+        </div>
+
+        <!---exercise 5-->
+        <div id="subtopic50" class="sub-content" style="display: none;">
+            
+            <div class="subtopic-box">
+                <h2>Use the correct attribute to resize an image on web-page to 200 pixel width.</h2>
+              <div> 
+                <p id="question50" ansValue='a href'>&lt;<input type="text" id="answer50" name="attribute_info">="image.png">&lt;img src="image.png" alt="Image of a cat">&lt;/a>  </p> 
+              </div>
+              <Button id="attribute_show_btn50" class="submit" onclick="showAnswer('question50', 'answer50', 'attribute_show_btn50', 'attribute_sub_btn50')">Show Answer</Button>
+              <Button id="attribute_sub_btn50" class="submit" onclick="checkAnswer('50', 'question50', 'answer50')">Submit Answer</Button>
+            </div>
+            <button id="backButton50"  class="bckButton" onclick="showOriginalContent('subtopic50', 'newContent50', 'nextButton50')">Back</button>
+        </div>
+
        
 
             <!--TABLES EXERCISES-->
@@ -2145,6 +2025,83 @@ h1 {
                     <Button id="attribute_sub_btn80" class="submit" onclick="checkAnswer('80', 'question80', 'answer80')">Submit Answer</Button>
                 </div>
             </div>
+
+            <!---COMPUTERCODE EXERCISES -->
+            <!----EXERCISE 2-->
+        <div id="subtopic82" class="sub-content" style="display: none;">
+       
+          <div class="subtopic-box">
+              <h2>Use the correct HTML attribute to display multiple lines of code on a web page.</h2>
+            <div> 
+              <p id="question82" ansValue='&lt;pre>'>  <input type="text" id="answer82" name="attribute_info"></p>
+                 <p> function add(a, b) { </p>
+                  <p>  return a + b; </p>
+                 <p> } </p>
+                 <p> &lt;/pre>   </p> 
+            </div>
+            <Button id="attribute_show_btn82" class="submit" onclick="showAnswer('question82', 'answer82', 'attribute_show_btn82', 'attribute_sub_btn82')">Show Answer</Button>
+            <Button id="attribute_sub_btn82" class="submit" onclick="checkAnswer('82', 'question82', 'answer82')">Submit Answer</Button>
+          </div>
+          <button id="backButton82" class="bckButton" onclick="showOriginalContent('subtopic82', 'newContent82', 'nextButton82')">Back</button>
+      </div>
+
+
+      <!--EXERCISE 3-->
+      <div id="subtopic83" class="sub-content" style="display: none;">
+         
+          <div class="subtopic-box">
+              <h2>Use the correct HTML element to create a code of block with a title. </h2>
+            <div> 
+              <p id="question83" ansValue='&lt;details>'> <input type="text" id="answer83" name="attribute_info"> </p>
+                  <p> &lt;summary>JavaScript function &lt;/summary> </p>
+                  <p>&lt;pre> </p>  
+                <p>function add (a,b) { </p>  
+                  <p>return a + b;</p> 
+                  <p> } </p> 
+                 <p>&lt;/pre></p> 
+                 <p>&lt;/details> </p>
+            </div>
+            <Button id="attribute_show_btn83" class="submit" onclick="showAnswer('question83', 'answer83', 'attribute_show_btn83', 'attribute_sub_btn83')">Show Answer</Button>
+            <Button id="attribute_sub_btn83" class="submit" onclick="checkAnswer('83', 'question83', 'answer83')">Submit Answer</Button>
+          </div>
+          <button id="backButton83" class="bckButton" onclick="showOriginalContent('subtopic83', 'newContent83', 'nextButton83')">Back</button>
+      </div>
+
+
+          <!---EXERCISE 4-->
+          <div id="subtopic84" class="sub-content" style="display: none;">
+           
+              <div class="subtopic-box">
+                  <h2>Use the correct HTML element to create a code block with title </h2>
+                <div> 
+                  <p id="question84" ansValue='&lt;span '> &lt;pre> </p>
+                      <p><input type="text" id="answer84" name="attribute_info">style ="color: red;">function</span> add(a, b) {</p>
+                      <p>return a + b; </p>  
+                    <p>}</p>  
+                     <p>&lt;/pre></p> 
+                </div>
+                <Button id="attribute_show_btn84" class="submit" onclick="showAnswer('question84', 'answer84', 'attribute_show_btn84', 'attribute_sub_btn84')">Show Answer</Button>
+                <Button id="attribute_sub_btn84" class="submit" onclick="checkAnswer('84', 'question84', 'answer84')">Submit Answer</Button>
+              </div>
+              <button id="backButton84" class="bckButton" onclick="showOriginalContent('subtopic84', 'newContent84', 'nextButton84')">Back</button>
+          </div>
+
+
+               <!---EXERCISE 5-->
+               <div id="subtopic85" class="sub-content" style="display: none;">
+                 
+                  <div class="subtopic-box">
+                      <h2>Use the correct HTML element to create a code block with title </h2>
+                    <div> 
+                      <p id="question85" ansValue='&lt;kbd> '> </p>
+                          <p>  &lt;p> Save the document by pressing <input type="text" id="answer85" name="attribute_info">Ctrl + S &lt;/kbd> &lt;/p> </p>
+                        
+                    </div>
+                    <Button id="attribute_show_btn85" class="submit" onclick="showAnswer('question85', 'answer85', 'attribute_show_btn85', 'attribute_sub_btn85')">Show Answer</Button>
+                    <Button id="attribute_sub_btn85" class="submit" onclick="checkAnswer('85', 'question85', 'answer85')">Submit Answer</Button>
+                  </div>
+                  <button id="backButton85" class="bckButton" onclick="showOriginalContent('subtopic85', 'newContent85', 'nextButton85')">Back</button>
+              </div>
 
            
 
