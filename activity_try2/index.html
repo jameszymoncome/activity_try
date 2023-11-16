@@ -851,21 +851,6 @@ Your text content goes here.: This is the actual text or content of your paragra
 
         <!--FORM ATTRIBUTES-->
         <div id="subtopic91" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Exercise 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton19" class="nxtButton" onclick="showNewContent('subtopic91', 'newContent19')">Next</button>
-        </div>
-        <div id="newContent19" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton19"  class="bckButton" onclick="showOriginalContent('subtopic91', 'newContent19', 'nextButton19')">Back</button>
-        </div>
-
-        <!--FORM ELEMENTS-->
-        <div id="subtopic96" class="sub-content" style="display: none;">
           <div class="subtopic-box">
               <p class="centered-text"><strong>HTML Form Attributes Tutorial</strong></p>
               <p>HTML forms allow users to input data and interact with web applications. Form attributes are used to define the characteristics and behavior of HTML forms. Here are some important form attributes:</p>
@@ -917,17 +902,32 @@ Your text content goes here.: This is the actual text or content of your paragra
       
               <p>These are some of the commonly used HTML form attributes. Understanding and using these attributes effectively is essential for building interactive and user-friendly web forms. HTML forms are the primary means by which users interact with web applications, making them a critical part of web development.</p>
           </div>
-          <button id="nextButton20" class="nxtButton" onclick="showNewContent('subtopic96', 'newContent20')">Next</button>
+          <button id="nextButton19" class="nxtButton" onclick="showNewContent('subtopic91', 'newContent91')">Next</button>
         </div>
-       <div id="newContent20" class="sub-content" style="display: none;">
+       <div id="newContent91" class="sub-content" style="display: none;">
 	    <div class="subtopic-box">
 	        <p id="question96" ansValue="Next</button>"><span class="exercise">Exercise 1:</span> Complete the line of code, where in the button shows "Next"</p>
-	        <pre>&lt;button type="button" onclick="alert('Hello World!')"><input type="text" id="answer96" name="attribute_info" size="13" maxlength="13"></pre>
-          <Button id="attribute_show_btn96" class="submit" onclick="showAnswer('question96', 'answer96', 'attribute_show_btn96', 'attribute_sub_btn96')">Show Answer</Button>
-          <Button id="attribute_sub_btn96" class="submit" onclick="checkAnswer('96','question96', 'answer96')">Submit Answer</Button>
+	        <pre>&lt;button type="button" onclick="alert('Hello World!')"><input type="text" id="answer91" name="attribute_info" size="13" maxlength="13"></pre>
+          <Button id="attribute_show_btn91" class="submit" onclick="showAnswer('question91', 'answer91', 'attribute_show_btn91', 'attribute_sub_btn91')">Show Answer</Button>
+          <Button id="attribute_sub_btn91" class="submit" onclick="checkAnswer('91','question91', 'answer91')">Submit Answer</Button>
 	    </div>
-	        <button id="backButton20"  class="bckButton" onclick="showOriginalContent('subtopic96', 'newContent20', 'nextButton20')">Back</button>
+	        <button id="backButton91"  class="bckButton" onclick="showOriginalContent('subtopic91', 'newContent91', 'nextButton19')">Back</button>
 	</div>
+
+        <!--FORM ELEMENTS-->
+	<div id="subtopic96" class="sub-content" style="display: none;">
+            <div class="subtopic-box">
+                <p class="centered-text">Exercise 1</p>
+                <p>Additional text goes here, not centered.</p>
+            </div>
+            <button id="nextButton20" class="nxtButton" onclick="showNewContent('subtopic91', 'newContent20')">Next</button>
+        </div>
+        <div id="newContent19" class="sub-content" style="display: none;">
+            <div class="subtopic-box">
+                <p>New content for Topic 1 appears here.</p>
+            </div>
+            <button id="backButton20"  class="bckButton" onclick="showOriginalContent('subtopic91', 'newContent20', 'nextButton19')">Back</button>
+        </div>
 
 
         <!--INPUT TYPES-->
@@ -1985,7 +1985,7 @@ h1 {
                   <p class="centered-text">Fill in the blank</p>
                   <p id="question92" ansValue="id"> The <input type="text" id="answer92" name="attribute_info" size="10" maxlength="10">  attribute assigns a unique identifier to the form element, which can be used for JavaScript interactions or CSS styling. </p>
                   <Button id="attribute_show_btn92" class="submit" onclick="showAnswer('question92', 'answer92', 'attribute_show_btn92', 'attribute_sub_btn92')">Show Answer</Button>
-                  <button id="attribute_sub_btn92" class="submit" onclick="checkAnswer('question92', 'answer92')">Submit Answer</button>
+                  <button id="attribute_sub_btn92" class="submit" onclick="checkAnswer('92', 'question92', 'answer92')">Submit Answer</button>
                 </div>
               </div>
               
@@ -1994,7 +1994,7 @@ h1 {
                   <p class="centered-text">Fill in the blank</p>
                   <p id="question93" ansValue="disabled"> The <input type="text" id="answer93" name="attribute_info" size="10" maxlength="10"> attribute disables a form field, making it non-interactable and visually muted.</p>
                   <Button id="attribute_show_btn93" class="submit" onclick="showAnswer('question93', 'answer93', 'attribute_show_btn93', 'attribute_sub_btn93')">Show Answer</Button>
-                  <button id="attribute_sub_btn93" class="submit" onclick="checkAnswer('question93', 'answer93')">Submit Answer</button>
+                  <button id="attribute_sub_btn93" class="submit" onclick="checkAnswer('93', 'question93', 'answer93')">Submit Answer</button>
                 </div>
               </div>
               
@@ -2003,7 +2003,7 @@ h1 {
                   <p class="centered-text">Fill in the blank</p>
                   <p id="question94" ansValue="method "> The  <input type="text" id="answer94" name="attribute_info" size="10" maxlength="10">method attribute specifies how the form data will be sent to the server. It can be either "get" or "post." "get" appends data to the URL, while "post" sends data in the request body. <form action="submit.php" method="post"></p>
                   <Button id="attribute_show_btn94" class="submit" onclick="showAnswer('question94', 'answer94', 'attribute_show_btn94', 'attribute_sub_btn94')">Show Answer</Button>
-                  <button id="attribute_sub_btn94" class="submit" onclick="checkAnswer('question94', 'answer94')">Submit Answer</button>
+                  <button id="attribute_sub_btn94" class="submit" onclick="checkAnswer('94', 'question94', 'answer94')">Submit Answer</button>
                 </div>
               </div>
         
@@ -2012,7 +2012,7 @@ h1 {
                   <p class="centered-text">Fill in the blank</p>
                   <p id="question95" ansValue="name"> The <input type="text" id="answer95" name="attribute_info" size="10" maxlength="10"> attribute assigns a name to the form element, which is used when processing the form data on the server. </p>
                   <Button id="attribute_show_btn95" class="submit" onclick="showAnswer('question95', 'answer95', 'attribute_show_btn95', 'attribute_sub_btn95')">Show Answer</Button>
-                  <button id="attribute_sub_btn95" class="submit" onclick="checkAnswer('question95', 'answer95')">Submit Answer</button>
+                  <button id="attribute_sub_btn95" class="submit" onclick="checkAnswer('95', 'question95', 'answer95')">Submit Answer</button>
                 </div>
               </div>
 
