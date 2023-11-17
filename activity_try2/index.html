@@ -346,18 +346,34 @@ Your text content goes here.: This is the actual text or content of your paragra
 
         <!--STYLE-->
         <div id="subtopic16" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Exercise 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton4" class="nxtButton" onclick="showNewContent('subtopic16', 'newContent4')">Next</button>
+          <div class="subtopic-box">
+            <p class="centered-text">HTML Styles</p>
+            <p style="color: black;">
+              HTML styles are used to control the visual presentation of web content. They are typically defined using Cascading Style Sheets (CSS).
+              <br>
+              <br>
+              <div style="text-align: center;">To apply styles to HTML elements</div><br>
+              
+              Examples:
+              <ul>
+                <li>You can use inline styles within the HTML tags, like &lt;p style="color: blue;"></li>
+                <li> You can link an external CSS file to your HTML document using the &lt;link> tag. </li>
+              </ul>
+              CSS allows you to specify various properties such as color, font, margins, and more, to control how elements appear on the webpage. Styles can be applied globally or selectively to specific elements using class and ID selectors. Understanding HTML styles is essential for creating visually appealing and well-organized web pages.
+            </p>
+          </div>
+          <button id="nextButton4" class="nxtButton" onclick="showNewContent('subtopic16', 'newContent4')">Next</button>
         </div>
         <div id="newContent4" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton4"  class="bckButton" onclick="showOriginalContent('subtopic16', 'newContent4', 'nextButton4')">Back</button>
+          <div class="subtopic-box">
+            <p class="centered-text">Exercise 1</p> <br>
+            <p id="question16" ansValue="style">Input the correct answer.</p> 
+          <div> <input type="text" id="answer16" name="attribute_info" size="5" maxlength="5"> attribute is used for styling HTML elements.</div>
+        <Button id="attribute_show_btn16" class="submit" onclick="showAnswer('question16', 'answer16', 'attribute_show_btn16', 'attribute_sub_btn16')">Show Answer</Button>
+        <Button id="attribute_sub_btn16" class="submit" onclick="checkAnswer('16','question16', 'answer16', 'subtopic16')">Submit Answer</Button>
         </div>
+        <button id="backButton16"  class="bckButton" onclick="showOriginalContent('subtopic16', 'newContent16', 'nextButton16')">Back</button>
+      </div>
 
         <!--FORMATTING-->
                <div id="subtopic21" class="sub-content" style="display: none;">
@@ -390,18 +406,36 @@ Your text content goes here.: This is the actual text or content of your paragra
 
         <!--QUOTATIONS-->
         <div id="subtopic26" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Exercise 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton6" class="nxtButton" onclick="showNewContent('subtopic26', 'newContent6')">Next</button>
+          <div class="subtopic-box">
+            <p class="centered-text">HTML Quotations</p>
+            <p style="color: black;">
+              HTML quotations are used to indicate quoted or cited text within a webpage. 
+              <br>
+              <br>
+              <div style="text-align: center;">There are two main elements for this purpose</div><br>
+              
+              These are:
+              <ul>
+                <li>The &lt;q> element is used for short, inline quotations, and it automatically adds double quotation marks around the quoted text. </li>
+                <li>For longer or block-level quotations, the &lt;blockquote> element is more suitable. It can contain multiple paragraphs and typically includes a cite attribute for the source reference.  </li>
+              </ul>
+              Properly using these elements enhances the semantics and readability of your content, making it clear when and where quotations are used in your HTML documents.
+            </p>
+          </div>
+          <button id="nextButton6" class="nxtButton" onclick="showNewContent('subtopic26', 'newContent6')">Next</button>
         </div>
         <div id="newContent6" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton6"  class="bckButton" onclick="showOriginalContent('subtopic26', 'newContent6', 'nextButton6')">Back</button>
+          <div class="subtopic-box">
+            <p class="centered-text">Exercise 1</p> <br>
+            <p id="question26" ansValue="q">Put the text below inside a qoutation using the appropriate HTML tags.</p> 
+          <div>
+            &lt;p>She said,&lt;<input type="text" id="answer26" name="attribute_info" size="3" maxlength="1"> >I cannot make it tonight.&lt;q>&lt;/p>
+          </div>
+        <Button id="attribute_show_btn26" class="submit" onclick="showAnswer('question26', 'answer26', 'attribute_show_btn26', 'attribute_sub_btn26')">Show Answer</Button>
+        <Button id="attribute_sub_btn26" class="submit" onclick="checkAnswer('26','question26', 'answer26', 'subtopic26')">Submit Answer</Button>
         </div>
+        <button id="backButton26"  class="bckButton" onclick="showOriginalContent('subtopic26', 'newContent26', 'nextButton26')">Back</button>
+      </div>
 
         <!--COMMENTS-->
         <div id="subtopic31" class="sub-content" style="display: none;">
@@ -935,18 +969,37 @@ Your text content goes here.: This is the actual text or content of your paragra
 
         <!--INPUT TYPES-->
         <div id="subtopic101" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p class="centered-text">Exercise 1</p>
-                <p>Additional text goes here, not centered.</p>
-            </div>
-            <button id="nextButton21" class="nxtButton" onclick="showNewContent('subtopic101', 'newContent21')">Next</button>
-        </div>
-        <div id="newContent21" class="sub-content" style="display: none;">
-            <div class="subtopic-box">
-                <p>New content for Topic 1 appears here.</p>
-            </div>
-            <button id="backButton21"  class="bckButton" onclick="showOriginalContent('subtopic101', 'newContent21', 'nextButton21')">Back</button>
-        </div>
+          <div class="subtopic-box">
+            <p class="centered-text">HTML Input Types</p>
+            <p style="color: black;">
+              HTML input types define the type of data an input field can accept on a webpage.  
+              <br>
+              <br>
+              <div style="text-align: center;">HTML input types define the type of data an input field can accept on a webpage. </div><br>
+              
+              These are:
+              <ul>
+                <li>&lt;input type="text"> for single-line text </li>
+                <li>&lt;input type="password"> for secure text entry</li>
+                <li>&lt;input type="checkbox"> for binary choices</li>
+              </ul>
+              Other types include email, number, date, and more, each serving a specific purpose. Utilizing the appropriate input type ensures data accuracy and provides a better user experience. Additionally, you can use attributes like placeholder, required, and pattern to further customize and validate user input, enhancing the functionality of web forms.
+            </p>
+          </div>
+          <button id="nextButton21" class="nxtButton" onclick="showNewContent('subtopic101', 'newContent21')">Next</button>
+      </div>
+      <div id="newContent21" class="sub-content" style="display: none;">
+          <div class="subtopic-box">
+              <p class="centered-text">Exercise 1</p>
+              <p id="question101" ansValue='&lt;input= "text"'>Use the appropriate HTML input type to define a single-line text input field needed below.</p>
+              <p>&lt;form> </p>
+              <p><input type="text" id="answer101" name="attribute_info" size="20" maxlength="25"> id="fname" name="name"></p>
+              <p>&lt;/form></p>
+              <Button id="attribute_show_btn101" class="submit" onclick="showAnswer('question101', 'answer101', 'attribute_show_btn101', 'attribute_sub_btn101')">Show Answer</Button>
+        <Button id="attribute_sub_btn101" class="submit" onclick="checkAnswer('101','question101', 'answer101', 'subtopic101')">Submit Answer</Button>
+          </div>
+          <button id="backButton21"  class="bckButton" onclick="showOriginalContent('subtopic101', 'newContent21', 'nextButton21')">Back</button>
+      </div>
 
         <!--INPUT ATTRIBUTES-->
         <div id="subtopic106" class="sub-content" style="display: none;">
@@ -1129,29 +1182,47 @@ I Love You
 
             <!--STYLES EXERCISES-->
             <div id="subtopic17" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 2</p>
+                  <p id="question17" ansValue="value">Complete the syntax of HTML style below.</p>
+                  <div>  &lt;tagname style="property:<input type="text" id="answer17" name="attribute_info" size="5" maxlength="5">;">.</div>
+                  <Button id="attribute_show_btn17" class="submit" onclick="showAnswer('question17', 'answer17', 'attribute_show_btn17', 'attribute_sub_btn17')">Show Answer</Button>
+                  <Button id="attribute_sub_btn17" class="submit" onclick="checkAnswer('17','question17', 'answer17', 'subtopic17')">Submit Answer</Button>
+              </div>
             </div>
             <div id="subtopic18" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 3</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 3</p>
+                  <div>
+                    <p id="question18" ansValue="background-color:transparent;">Set the background color of the container below to transparent.</p>
+                    <p>&lt;div style="<input type="text" id="answer18" name="attribute_info" size="23" maxlength="29">"&gt;</p>
+                    <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                    <p>&lt;/div&gt;</p>
+                  </div>
+                  <Button id="attribute_show_btn18" class="submit" onclick="showAnswer('question18', 'answer18', 'attribute_show_btn18', 'attribute_sub_btn18')">Show Answer</Button>
+                  <Button id="attribute_sub_btn18" class="submit" onclick="checkAnswer('18','question18', 'answer18', 'subtopic18')">Submit Answer</Button>
+              </div>
             </div>
-            <div id="subtopic19" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 4</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic20" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 5</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
+            <div id="subtopic19" class="sub-content" style="display:none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 4</p>
+                  <div>
+                    <p id="question19" ansValue="text-align">Provide the missing property of style attribute to center the text alignment of the paragraph below.</p>
+                    <p>&lt;p style="<input type="text" id="answer19" name="attribute_info" size="5" maxlength="10">:center;"> This is paragraph.&lt;/p&gt;</p>
+                  </div>
+                  <Button id="attribute_show_btn19" class="submit" onclick="showAnswer('question19', 'answer19', 'attribute_show_btn19', 'attribute_sub_btn19')">Show Answer</Button>
+                  <Button id="attribute_sub_btn19" class="submit" onclick="checkAnswer('19','question19', 'answer19', 'subtopic19')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic20" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 5</p>
+                  <p id="question20" ansValue="font-family">Provide the missing property of style attribute to set the font style of the text below to courier.</p>
+                  <p>&lt;p style=<input type="text" id="answer20" name="attribute_info" size="5" maxlength="11">:courier;">This is a paragraph.&lt;/p&gt;</p>
+                  <Button id="attribute_show_btn20" class="submit" onclick="showAnswer('question20', 'answer20', 'attribute_show_btn20', 'attribute_sub_btn20')">Show Answer</Button>
+                  <Button id="attribute_sub_btn20" class="submit" onclick="checkAnswer('20','question20', 'answer20', 'subtopic20')">Submit Answer</Button>
+              </div>
+          </div>
 
             <!--FORMATTING EXERCISES-->
             <div id="subtopic22" class="sub-content" style="display: none;">
@@ -1193,29 +1264,45 @@ I Love You
 
             <!--QUOTATIONS EXERCISES-->
             <div id="subtopic27" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic28" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 3</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic29" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 4</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic30" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 5</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 2</p>
+                  <p id="question27" ansValue="abbr">Complete the tags below to provide the specified abbreviation of "CNSC".</p>
+                  <div> &lt;p&gt;&lt;<input type="text" id="answer27" name="attribute_info" size="4" maxlength="5"> title="Camarines Norte State College"&gt;CNSC&lt;/abbr&gt;&lt;/p> </div>
+                  <Button id="attribute_show_btn27" class="submit" onclick="showAnswer('question27', 'answer27', 'attribute_show_btn27', 'attribute_sub_btn27')">Show Answer</Button>
+                  <Button id="attribute_sub_btn27" class="submit" onclick="checkAnswer('27','question27', 'answer27', 'subtopic27')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic28" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 3</p>
+                  <p id="question28" ansValue="rtl">Complete the dir attribute of bdo tag to write the context from right to left.</p>
+                  <div> &lt;bdo dir="<input type="text" id="answer28" name="attribute_info" size="3" maxlength="5">">This text will be written from right to left&lt;/bdo&gt;</div>
+                  <Button id="attribute_show_btn28" class="submit" onclick="showAnswer('question28', 'answer28', 'attribute_show_btn28', 'attribute_sub_btn28')">Show Answer</Button>
+                  <Button id="attribute_sub_btn28" class="submit" onclick="checkAnswer('28','question28', 'answer28', 'subtopic28')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic29" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 4</p>
+                  <p id="question29" ansValue="address">Give the correct HTML tag to render the contexts below in italic.</p>
+                  <p>&lt;<input type="text" id="answer29" name="attribute_info" size="4" maxlength="7">&gt;</p>
+                  <p>F. Pimentel Avenue, &lt;br&gt;</p>
+                  <p>Daet, Camarines Norte, Philippines 4600  &lt;br&gt;</p>
+                  <p>November, 2023</p>
+                  <p>&lt;/address&gt;</p>
+                  <Button id="attribute_show_btn29" class="submit" onclick="showAnswer('question29', 'answer29', 'attribute_show_btn29', 'attribute_sub_btn29')">Show Answer</Button>
+                  <Button id="attribute_sub_btn29" class="submit" onclick="checkAnswer('29','question29', 'answer29', 'subtopic29')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic30" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 5</p>
+                  <p id="question30" ansValue="cite">Give the correct HTML tag to define the title of Hev Abi's song.</p>
+                  <p>&lt;p&gt;&lt;<input type="text" id="answer30" name="attribute_info" size="4" maxlength="7">&gt;WELCOME2DTQ&lt;/cite&gt; by Hev Abi&lt;/p&gt;</p>
+                  <Button id="attribute_show_btn30" class="submit" onclick="showAnswer('question30', 'answer30', 'attribute_show_btn30', 'attribute_sub_btn30')">Show Answer</Button>
+                  <Button id="attribute_sub_btn30" class="submit" onclick="checkAnswer('30','question30', 'answer30', 'subtopic30')">Submit Answer</Button>
+              </div>
+          </div>
 
             <!--COMMENTS EXERCISES-->
             <div id="subtopic32" class="sub-content" style="display: none;">
@@ -2078,29 +2165,49 @@ h1 {
 
             <!--INPUT TYPES EXERCISES-->
             <div id="subtopic102" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 2</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic103" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 3</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic104" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 4</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
-            <div id="subtopic105" class="sub-content" style="display: none;">
-                <div class="subtopic-box">
-                    <p class="centered-text">Exercise 5</p>
-                    <p>Additional text goes here, not centered.</p>
-                </div>
-            </div>
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 2</p>
+                  <p id="question102" ansValue='input type="password"'>Use the appropriate HTML input type to define a password field needed below..</p>
+                  <p>&lt;form></p>
+                  <p>&lt;label for="username">Username:&lt;/label><br></p>
+                  <p>&lt;input type="text" id="username" name="username"><br></p>
+                  <p>&lt;label for="pwd">Password:&lt;/label><br></p>
+                  <p> &lt;<input type="text" id="answer102" name="attribute_info" size="20" maxlength="25"> id="pwd" name="pwd"></p>
+                  <p>&lt;/form></p>
+                  <Button id="attribute_show_btn102" class="submit" onclick="showAnswer('question102', 'answer102', 'attribute_show_btn102', 'attribute_sub_btn102')">Show Answer</Button>
+                  <Button id="attribute_sub_btn102" class="submit" onclick="checkAnswer('102', 'question102', 'answer102')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic103" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 3</p>
+                  <p id="question103" ansValue='input type="checkbox"'>What is the syntax of an input type used to define a checkbox in HTML?</p>
+                  <p> &lt;<input type="text" id="answer103" name="attribute_info" size="20" maxlength="25">></p>
+                  <Button id="attribute_show_btn103" class="submit" onclick="showAnswer('question103', 'answer103', 'attribute_show_btn103', 'attribute_sub_btn103')">Show Answer</Button>
+                  <Button id="attribute_sub_btn103" class="submit" onclick="checkAnswer('103', 'question103', 'answer103')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic104" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 4</p>
+                  <p id="question104" ansValue='input type="text" id="nameId" name="Name"'>Add a single-line text input field for the name label below with an id of "nameId".</p>
+                  <p>&lt;form></p>
+                  <p>&lt;label for="Name">Name:&lt;/label>&lt;br></p>
+                  <p><input type="text" id="answer104" name="attribute_info" size="40" maxlength="25"></p>
+                  <p>&lt;/form></p>
+                  <Button id="attribute_show_btn104" class="submit" onclick="showAnswer('question104', 'answer104', 'attribute_show_btn104', 'attribute_sub_btn104')">Show Answer</Button>
+                  <Button id="attribute_sub_btn104" class="submit" onclick="checkAnswer('104', 'question104', 'answer104')">Submit Answer</Button>
+              </div>
+          </div>
+          <div id="subtopic105" class="sub-content" style="display: none;">
+              <div class="subtopic-box">
+                  <p class="centered-text">Exercise 5</p>
+                  <p id="question105" ansValue="text" >What is the default value of the type attribute of HTMl input type?</p>
+                  <p><input type="text" id="answer105" name="attribute_info" size="5" maxlength="5"></p>
+                  <Button id="attribute_show_btn105" class="submit" onclick="showAnswer('question105', 'answer105', 'attribute_show_btn105', 'attribute_sub_btn105')">Show Answer</Button>
+                  <Button id="attribute_sub_btn105" class="submit" onclick="checkAnswer('105', 'question105', 'answer105')">Submit Answer</Button>
+              </div>
+          </div>
 
             <!--INPUT ATTRIBUTES EXERCISES-->
             <div id="subtopic107" class="sub-content" style="display: none;">
