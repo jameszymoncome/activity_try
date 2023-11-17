@@ -887,66 +887,47 @@ Your text content goes here.: This is the actual text or content of your paragra
         <div id="subtopic91" class="sub-content" style="display: none;">
           <div class="subtopic-box">
               <p class="centered-text"><strong>HTML Form Attributes Tutorial</strong></p>
-              <p>HTML forms allow users to input data and interact with web applications. Form attributes are used to define the characteristics and behavior of HTML forms. Here are some important form attributes:</p>
-      
-              <p><strong>1. `action` Attribute:</strong></p>
-              <p>The `action` attribute specifies the URL where the form data will be sent when the user submits the form.</p>
-              <p>Example: &lt;form action="submit.php" method="post"&gt;</p>
-      
-              <p><strong>1. `action` Attribute:</strong></p>
-              <p>The `action` attribute specifies the URL where the form data will be sent when the user submits the form.</p>
-              <p>Example: &lt;form action="submit.php" method="post"&gt;</p>
-      
-              <p><strong>2. `method` Attribute:</strong></p>
-              <p>The `method` attribute specifies how the form data will be sent to the server. It can be either "get" or "post."</p>
-              <p>"get" appends data to the URL, while "post" sends data in the request body.</p>
-              <p>Example: &lt;form action="submit.php" method="post"&gt;</p>
-      
-              <p><strong>3. `name` Attribute:</strong></p>
-              <p>The `name` attribute assigns a name to the form element, which is used when processing the form data on the server.</p>
-              <p>Example: &lt;input type="text" name="username"&gt;</p>
-      
-              <p><strong>4. `id` Attribute:</strong></p>
-              <p>The `id` attribute assigns a unique identifier to the form element, which can be used for JavaScript interactions or CSS styling.</p>
-              <p>Example: &lt;input type="text" id="user-input"&gt;</p>
-      
-              <p><strong>5. `placeholder` Attribute:</strong></p>
-              <p>The `placeholder` attribute provides a hint or example of the expected input to the user.</p>
-              <p>Example: &lt;input type="text" placeholder="Enter your name"&gt;</p>
-      
-              <p><strong>6. `required` Attribute:</strong></p>
-              <p>The `required` attribute makes a form field mandatory, and the user must provide a value before submitting the form.</p>
-              <p>Example: &lt;input type="email" name="email" required&gt;</p>
-      
-              <p><strong>7. `readonly` Attribute:</strong></p>
-              <p>The `readonly` attribute makes a form field read-only, preventing the user from editing the value.</p>
-              <p>Example: &lt;input type="text" name="readonlyField" value="Read-only text" readonly&gt;</p>
-      
-              <p><strong>8. `disabled` Attribute:</strong></p>
-              <p>The `disabled` attribute disables a form field, making it non-interactable and visually muted.</p>
-              <p>Example: &lt;input type="text" name="disabledField" value="Disabled text" disabled&gt;</p>
-      
-              <p><strong>9. `value` Attribute:</strong></p>
-              <p>The `value` attribute sets the initial value of a form field.</p>
-              <p>Example: &lt;input type="text" name="initialValueField" value="Default value"&gt;</p>
-      
-              <p><strong>10. `autocomplete` Attribute:</strong></p>
-              <p>The `autocomplete` attribute controls whether the browser should provide autocomplete suggestions for the input field.</p>
-              <p>Example: &lt;input type="text" name="autocompleteField" autocomplete="off"&gt;</p>
-      
-              <p>These are some of the commonly used HTML form attributes. Understanding and using these attributes effectively is essential for building interactive and user-friendly web forms. HTML forms are the primary means by which users interact with web applications, making them a critical part of web development.</p>
+              <p>
+                  Learn the essential attributes for creating HTML forms:
+                  <ol>
+                      <li><strong>action:</strong> Specifies the form data's submission URL.</li>
+                      <li><strong>method:</strong> Defines the HTTP method for data submission (get or post).</li>
+                      <li><strong>name:</strong> Assigns a name to the form, crucial for server-side scripts.</li>
+                      <li><strong>target:</strong> Specifies where the response appears after form submission.</li>
+                      <li><strong>Input Types:</strong>
+                          <ul>
+                              <li>Text Input: Single-line text entry.</li>
+                              <li>Password Input: Conceals entered text.</li>
+                              <li>Checkbox: Allows selecting multiple options.</li>
+                              <li>Radio Button: Allows selecting a single option.</li>
+                              <li>Submit Button: Triggers form submission.</li>
+                              <li>Reset Button: Resets the form to default values.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Common Attributes for Input Elements:</strong>
+                          <ul>
+                              <li>id: Provides a unique identifier, often associated with a label.</li>
+                              <li>name: Specifies the input field name for form submission.</li>
+                              <li>value: Defines the initial value of the input element.</li>
+                              <li>placeholder: Displays a hint for expected input.</li>
+                              <li>required: Indicates a mandatory input field.</li>
+                          </ul>
+                      </li>
+                  </ol>
+              </p>
           </div>
           <button id="nextButton19" class="nxtButton" onclick="showNewContent('subtopic91', 'newContent91')">Next</button>
+      </div>
+      
+      <div id="newContent91" class="sub-content" style="display: none;">
+        <div class="subtopic-box">
+      <p class="centered-text">Fill in the blank</p>
+      <p id="question91" ansValue="'type'"> The <input type="text" id="answer91" name="attribute_info" size="10" maxlength="11"> attribute in HTML is used to define the type of the input element, such as text, password, or email. </p>
+            <Button id="attribute_show_btn91" class="submit" onclick="showAnswer('question91', 'answer91', 'attribute_show_btn91', 'attribute_sub_btn91')">Show Answer</Button>
+            <Button id="attribute_sub_btn91" class="submit" onclick="checkAnswer('91','question31', 'answer91', 'subtop91')">Submit Answer</Button>
         </div>
-       <div id="newContent91" class="sub-content" style="display: none;">
-	    <div class="subtopic-box">
-	        <p id="question96" ansValue="Next</button>"><span class="exercise">Exercise 1:</span> Complete the line of code, where in the button shows "Next"</p>
-	        <pre>&lt;button type="button" onclick="alert('Hello World!')"><input type="text" id="answer91" name="attribute_info" size="13" maxlength="13"></pre>
-          <Button id="attribute_show_btn91" class="submit-show" onclick="showAnswer('question91', 'answer91', 'attribute_show_btn91', 'attribute_sub_btn91')">Show Answer</Button>
-          <Button id="attribute_sub_btn91" class="submit" onclick="checkAnswer('91','question91', 'answer91')">Submit Answer</Button>
-	    </div>
-	        <button id="backButton91"  class="bckButton" onclick="showOriginalContent('subtopic91', 'newContent91', 'nextButton19')">Back</button>
-	</div>
+        <button id="backButton91"  class="bckButton" onclick="showOriginalContent('subtopic91', 'newContent91', 'nextButton19')">Back</button>
+    </div>
 
         <!--FORM ELEMENTS-->
 	<div id="subtopic96" class="sub-content" style="display: none;">
