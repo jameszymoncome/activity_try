@@ -314,5 +314,10 @@ body {
   float: left;
 }
 
+.submit-show:hover{
+  transform: translateX(10px);
+  background-color: #8AA6CE;
+}
+
 
 
