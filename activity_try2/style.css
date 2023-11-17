@@ -254,6 +254,9 @@ body {
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
   animation-delay: 0s;
+
+  margin-top: 50px; /* Adjust the top margin */
+  float: right;
 }
 
 .submit:hover {
@@ -289,9 +292,27 @@ body {
   background-color: lightyellow;
 }
 
+.submit-show{
+  display:block;
+  background-color: var(--clr-accent);
+  border-color: rgb(251, 184, 59);
+  border: 2px solid;
+  font-size: 14px;
+  height:30px;
+  width: 15%;
+  border-radius: 25px;
+  margin-top:20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  animation-name: slideInTop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+
+  margin-top: 50px; /* Adjust the top margin */
+  float: left;
+}
 
 
 
-
-
-  
